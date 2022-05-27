@@ -1,0 +1,7 @@
+com\ecommerce\qa\util\TestDataGenerator.class
+com\ecommerce\qa\config\EnvironmentConfig.class
+com\ecommerce\qa\pages\LoginPage.class
+com\ecommerce\qa\pages\CategoryPage.class
+com\ecommerce\qa\pages\CartPage.class
+com\ecommerce\qa\base\TestBase.class
+com\ecommerce\qa\pages\ProductPage.class
