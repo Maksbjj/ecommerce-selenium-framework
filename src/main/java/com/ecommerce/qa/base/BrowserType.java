@@ -1,8 +1,8 @@
 package com.ecommerce.qa.base;
 
 public enum BrowserType {
-    Firefox,
-    Chrome,
+    FIREFOX,
+    CHROME,
     IE,
-    Safari
+    SAFARI
 }

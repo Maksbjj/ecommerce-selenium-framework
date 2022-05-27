@@ -26,4 +26,13 @@ public interface EnvironmentConfig extends Config {
     @Key("add_to_product_cart_message")
     String addToCartMessage();
 
+    @Key("forgot_password_invalid")
+    String forgotPasswordInvalidMessage();
+
+    @Key("forgot_password_no_account")
+    String forgetPasswordNoAccountMessage();
+
+    @Key("forgot_password_success")
+    String forgotPasswordSuccessMessage();
+
 }

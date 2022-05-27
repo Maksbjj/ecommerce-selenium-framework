@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 import static com.ecommerce.qa.base.DriverContext.getDriver;
-import static com.ecommerce.qa.base.EnvConfigContext.envConfig;
+
 
 
 public class BasePage extends FrameworkInitialize {

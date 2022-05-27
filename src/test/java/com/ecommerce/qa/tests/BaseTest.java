@@ -7,15 +7,17 @@ import org.testng.annotations.BeforeMethod;
 
 import static com.ecommerce.qa.base.DriverContext.getDriver;
 
-public class BaseTest extends FrameworkInitialize {
+public abstract class BaseTest extends FrameworkInitialize {
 
     @BeforeMethod
     public void setUp() {
-        initializeBrowser(BrowserType.Chrome);
+        initializeBrowser(BrowserType.CHROME);
         deleteCookies();
         maximizeWindow();
+        createEnvConfig();
         setImplicitTimeout();
         setExplicitTimeout();
+        readPageTitles();
     }
 
     @AfterMethod

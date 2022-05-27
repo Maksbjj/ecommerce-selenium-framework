@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static com.ecommerce.qa.base.DriverContext.getDriver;
-import static com.ecommerce.qa.base.EnvConfigContext.envConfig;
 
 public class HomePageTests extends BaseTest {
 
@@ -16,7 +15,7 @@ public class HomePageTests extends BaseTest {
         BasePage homePage = new BasePage();
 
         String pageTitle = homePage.openHomePage().getPageTitle();
-        Assert.assertEquals(pageTitle, envConfig.pageTitle());
+        Assert.assertEquals(pageTitle, getPageTitle("Home"));
     }
 
     @Test(dataProvider = "newsletter_data", dataProviderClass = TestDataProvider.class)

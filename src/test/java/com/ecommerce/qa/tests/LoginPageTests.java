@@ -6,6 +6,8 @@ import com.ecommerce.qa.pages.ForgotPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class LoginPageTests extends BaseTest {
 
 
@@ -14,7 +16,7 @@ public class LoginPageTests extends BaseTest {
         BasePage basePage = new BasePage();
         AccountPage accountPage = basePage.openHomePage().openLoginPage().login();
         String pageTitle = accountPage.getPageTitle();
-        Assert.assertEquals(pageTitle, "My account - My Store");
+        Assert.assertEquals(pageTitle, "Account");
     }
 
     @Test
@@ -22,6 +24,7 @@ public class LoginPageTests extends BaseTest {
         BasePage basePage = new BasePage();
         ForgotPasswordPage forgotPassword = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
         String pageTitle = forgotPassword.getPageTitle();
-        Assert.assertEquals(pageTitle, "Forgot your password - My Store");
+        Assert.assertEquals(pageTitle, getPageTitle("Forgot password"));
     }
+
 }

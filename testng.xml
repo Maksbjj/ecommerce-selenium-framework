@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite1" parallel="methods" thread-count="10">
-    <test name="Test1">
+<suite name="FirstSuite" parallel="methods" thread-count="10">
+    <test name="TestSuite">
         <classes>
             <class name="com.ecommerce.qa.tests.HomePageTests"/>
+            <class name="com.ecommerce.qa.tests.LoginPageTests"/>
         </classes>
     </test>
 </suite>
