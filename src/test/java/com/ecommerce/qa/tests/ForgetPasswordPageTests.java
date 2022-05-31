@@ -24,4 +24,14 @@ public class ForgetPasswordPageTests extends  BaseTest{
         LoginPage loginPage = forgotPasswordPage.goBackToLoginPage();
         Assert.assertEquals(loginPage.getPageTitle(),getPageTitle("Account"));
     }
+
+    @Test
+    public void goBackToLoginPageByBreadCrumbButton(){
+        BasePage basePage = new BasePage();
+        ForgotPasswordPage forgotPasswordPage = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
+        LoginPage loginPage = forgotPasswordPage.goBackToLoginPageByBreadCrumb();
+        Assert.assertEquals(loginPage.getPageTitle(),getPageTitle("Account"));
+    }
+
+
 }

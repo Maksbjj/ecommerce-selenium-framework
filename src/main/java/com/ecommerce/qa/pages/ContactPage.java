@@ -1,6 +1,6 @@
 package com.ecommerce.qa.pages;
 
-public class ContactPage {
+public class ContactPage extends BasePage {
 
     public ContactPage() {
     }

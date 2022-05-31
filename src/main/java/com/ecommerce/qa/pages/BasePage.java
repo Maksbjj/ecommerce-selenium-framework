@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
+import static com.ecommerce.qa.base.DriverContext.driver;
 import static com.ecommerce.qa.base.DriverContext.getDriver;
 
 
@@ -49,8 +50,14 @@ public class BasePage extends FrameworkInitialize {
     @FindBy(xpath = "//button[text()='Shop now !']")
     private WebElement shopNowButton;
 
-    @FindBy(css = "i[class='icon-eye-open']")
-    private WebElement eyeOpenButton;
+    @FindBy(css = "a[class='quick-view-mobile']")
+    private WebElement openProductPreviewMobileButton;
+
+    @FindBy(css = "a[class='quick-view']")
+    private WebElement openProductPreviewButton;
+
+    @FindBy(css ="div[class*='fancybox-wrap']")
+    private WebElement productReviewPopUp;
 
     @FindBy(css = "span[class='shop-phone']")
     private WebElement callUsNowElement;
@@ -90,6 +97,7 @@ public class BasePage extends FrameworkInitialize {
 
     @FindBy(xpath = "(//div[@class='product-container'])[1]")
     private WebElement productContainer;
+
 
 
     public BasePage openHomePage() {
@@ -139,7 +147,6 @@ public class BasePage extends FrameworkInitialize {
     }
 
     public boolean isLogoPresent() {
-
         return pageLogo.isDisplayed();
     }
 
@@ -149,5 +156,10 @@ public class BasePage extends FrameworkInitialize {
         return new AddToCartPopup();
     }
 
-
+    public boolean openProductReviewPopUp(){
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(productContainer).moveToElement(openProductPreviewButton).click().build().perform();
+        wait.until(ExpectedConditions.visibilityOf(productReviewPopUp));
+        return productReviewPopUp.isDisplayed();
+    }
 }

@@ -12,4 +12,7 @@ public class FakeDataGenerator {
     public String invalidEmail() {
         return faker.name().toString();
     }
+    public String randomPassword(){
+        return  faker.internet().password();
+    }
 }

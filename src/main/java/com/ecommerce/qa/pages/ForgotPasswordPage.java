@@ -22,6 +22,9 @@ public class ForgotPasswordPage extends BasePage {
     @FindBy(css = "div[class*='alert']")
     private WebElement alert;
 
+    @FindBy(css = "a[title='Authentication']")
+    private WebElement breadCrumbGoBackToLoginButton;
+
 
     public String submitForgotEmailInput(String email){
         emailInput.sendKeys(email);
@@ -32,6 +35,11 @@ public class ForgotPasswordPage extends BasePage {
 
     public LoginPage goBackToLoginPage(){
         backToLoginPageButton.click();
+        return new LoginPage();
+    }
+
+    public LoginPage goBackToLoginPageByBreadCrumb(){
+        breadCrumbGoBackToLoginButton.click();
         return new LoginPage();
     }
 }

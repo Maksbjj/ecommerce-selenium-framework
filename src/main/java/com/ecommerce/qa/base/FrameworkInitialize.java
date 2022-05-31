@@ -71,7 +71,7 @@ public class FrameworkInitialize {
         pageTitles = new HashMap<>();
         List<String[]> strings;
         try (CSVReader reader = new CSVReader(
-                new FileReader("D:\\java automation\\ecommerce\\src\\main\\java\\com\\ecommerce\\qa\\files\\PageTitles.csv"))) {
+                new FileReader("src/main/java/com/ecommerce/qa/files/PageTItles.csv"))) {
 
             strings = reader.readAll();
         for (String[] string : strings) {
@@ -84,7 +84,6 @@ public class FrameworkInitialize {
         }
 
         public String getPageTitle(String pageName) {
-
             List<String> strings = pageTitles
                     .entrySet()
                     .stream()
