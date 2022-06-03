@@ -4,15 +4,25 @@ import com.github.javafaker.Faker;
 
 public class FakeDataGenerator {
 
-    Faker faker = new Faker();
+    private static final Faker faker = new Faker();
 
-    public String validEmail() {
+    public static String validEmail() {
         return faker.internet().emailAddress();
     }
-    public String invalidEmail() {
+
+    public static String invalidEmail() {
         return faker.name().toString();
     }
-    public String randomPassword(){
-        return  faker.internet().password();
+
+    public static String randomPassword() {
+        return faker.internet().password();
+    }
+
+    public static String randomMessage() {
+        return faker.regexify("[A-Za-z0-9]{20}");
+    }
+
+    public static String randomNumber() {
+        return faker.number().toString();
     }
 }

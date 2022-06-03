@@ -7,7 +7,7 @@ import com.ecommerce.qa.util.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
+import static com.ecommerce.qa.util.CsvUtil.getPageTitle;
 
 public class LoginPageTests extends BaseTest {
 
@@ -20,8 +20,8 @@ public class LoginPageTests extends BaseTest {
         Assert.assertEquals(pageTitle, getPageTitle("Account"));
     }
 
-    @Test(dataProvider = "failed_login_data",dataProviderClass = TestDataProvider.class)
-    public void shouldFailLoggingIntoAccount(String email,String password,String alert){
+    @Test(dataProvider = "failed_login_data", dataProviderClass = TestDataProvider.class)
+    public void shouldFailLoggingIntoAccount(String email, String password, String alert) {
         BasePage basePage = new BasePage();
         String alertMessage = basePage.openHomePage().openLoginPage().login(email, password);
         Assert.assertTrue(alertMessage.contains(alert));

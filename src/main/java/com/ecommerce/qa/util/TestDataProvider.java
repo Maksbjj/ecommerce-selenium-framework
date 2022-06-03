@@ -1,35 +1,47 @@
 package com.ecommerce.qa.util;
 
-import com.ecommerce.qa.config.EnvironmentConfig;
-import org.aeonbits.owner.ConfigFactory;
 import org.testng.annotations.DataProvider;
 
-public class TestDataProvider extends FakeDataGenerator {
+import java.util.Map;
 
-    ExcelUtil alerts = new ExcelUtil("src/main/java/com/ecommerce/qa/files/alert.xls");
+import static com.ecommerce.qa.base.FrameworkInitialize.envConfig;
+import static com.ecommerce.qa.util.FakeDataGenerator.*;
 
+public class TestDataProvider {
+
+    protected static ExcelUtil alerts;
+    protected static Map<String, String> pageTitles;
 
     @DataProvider(name = "newsletter_data")
     public Object[][] getNewsletterInputData() {
-        EnvironmentConfig envConfig = ConfigFactory.create(EnvironmentConfig.class);
-        return new Object[][]{{validEmail(), alerts.getCellValue(0,0)}
-                , {invalidEmail(), alerts.getCellValue(0,2)}
-                , {envConfig.getUserPassword(), alerts.getCellValue(0,1)}};
+        return new Object[][]{{validEmail(), alerts.getCellValue(0, 0)}
+                , {invalidEmail(), alerts.getCellValue(0, 2)}
+                , {envConfig.getUserPassword(), alerts.getCellValue(0, 1)}};
     }
 
     @DataProvider(name = "forgot_password_data")
     public Object[][] getForgotPasswordData() {
-        EnvironmentConfig envConfig = ConfigFactory.create(EnvironmentConfig.class);
-        return new Object[][]{{validEmail(), alerts.getCellValue(0,5)}
-                , {invalidEmail(), alerts.getCellValue(0,4)}
-                , {envConfig.getUserEmail(), alerts.getCellValue(0,6)}};
+        return new Object[][]{{validEmail(), alerts.getCellValue(0, 5)}
+                , {invalidEmail(), alerts.getCellValue(0, 4)}
+                , {envConfig.getUserEmail(), alerts.getCellValue(0, 6)}};
     }
 
     @DataProvider(name = "failed_login_data")
     public Object[][] getFailedLoginCredentials() {
-        EnvironmentConfig envConfig = ConfigFactory.create(EnvironmentConfig.class);
-        return new Object[][]{{"",randomPassword(), alerts.getCellValue(0,7),}
-                , {validEmail(),randomPassword(), alerts.getCellValue(0,8)}
-                , {validEmail(),"", alerts.getCellValue(0,9)}};
+        return new Object[][]{{"", randomPassword(), alerts.getCellValue(0, 7),}
+                , {validEmail(), randomPassword(), alerts.getCellValue(0, 8)}
+                , {validEmail(), "", alerts.getCellValue(0, 9)}};
+    }
+
+    @DataProvider(name = "contact_form_data")
+    public Object[][] getContactUsFormData() {
+        return new Object[][]{{"Customer service", "For any question about a product, an order"},
+                {"Webmaster", "If a technical problem occurs on this website"}};
+    }
+
+    @DataProvider(name = "contact_form_data_subjects")
+    public Object[][] getContactFormSubjects() {
+        return new Object[][]{{"Customer service"},
+                {"Webmaster"}};
     }
 }
