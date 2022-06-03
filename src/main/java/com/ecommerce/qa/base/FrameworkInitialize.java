@@ -1,7 +1,8 @@
 package com.ecommerce.qa.base;
 
 import com.ecommerce.qa.config.EnvironmentConfig;
-import com.opencsv.CSVReader;
+import com.ecommerce.qa.util.ExcelUtil;
+import com.ecommerce.qa.util.TestDataProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,23 +11,18 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.time.Duration;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import static com.ecommerce.qa.base.DriverContext.getDriver;
+import static com.ecommerce.qa.util.CsvUtil.readPageTitles;
 
-public class FrameworkInitialize {
+public class FrameworkInitialize extends TestDataProvider {
 
     public static WebDriverWait wait;
     public static EnvironmentConfig envConfig;
-    private Map<String,String> pageTitles;
 
-    public static void initializeBrowser(BrowserType browser) {
+
+    public void initializeBrowser(BrowserType browser) {
         switch (browser) {
             case FIREFOX -> {
                 WebDriverManager.firefoxdriver().setup();
@@ -55,7 +51,7 @@ public class FrameworkInitialize {
         getDriver().manage().deleteAllCookies();
     }
 
-    public static void setImplicitTimeout() {
+    public void setImplicitTimeout() {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
@@ -63,33 +59,12 @@ public class FrameworkInitialize {
         wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
     }
 
-    public void createEnvConfig(){
+    public static void createEnvConfig() {
         envConfig = ConfigFactory.create(EnvironmentConfig.class);
     }
 
-    public void readPageTitles()  {
-        pageTitles = new HashMap<>();
-        List<String[]> strings;
-        try (CSVReader reader = new CSVReader(
-                new FileReader("src/main/java/com/ecommerce/qa/files/PageTItles.csv"))) {
-
-            strings = reader.readAll();
-        for (String[] string : strings) {
-            pageTitles.put(string[0],string[1]);
-        }
-        } catch (IOException e) {
-            Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-            logger.log(Level.INFO,"Impossible to read the file");
-        }
-        }
-
-        public String getPageTitle(String pageName) {
-            List<String> strings = pageTitles
-                    .entrySet()
-                    .stream()
-                    .filter(x -> x.getKey().equals(pageName))
-                    .map(Map.Entry::getValue).toList();
-            return strings.get(0);
-        }
-
+    public static void loadTestData() {
+        alerts = new ExcelUtil(envConfig.getExcelAlertsPath());
+        readPageTitles();
+    }
 }

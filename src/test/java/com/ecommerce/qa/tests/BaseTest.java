@@ -17,7 +17,8 @@ public abstract class BaseTest extends FrameworkInitialize {
         createEnvConfig();
         setImplicitTimeout();
         setExplicitTimeout();
-        readPageTitles();
+        createEnvConfig();
+        loadTestData();
     }
 
     @AfterMethod

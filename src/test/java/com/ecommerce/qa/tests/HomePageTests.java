@@ -2,13 +2,14 @@ package com.ecommerce.qa.tests;
 
 import com.ecommerce.qa.pages.BasePage;
 import com.ecommerce.qa.pages.ContactPage;
-import com.ecommerce.qa.popup.AddToCartPopup;
+import com.ecommerce.qa.pages.popup.AddToCartPopup;
 import com.ecommerce.qa.util.ExcelUtil;
 import com.ecommerce.qa.util.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static com.ecommerce.qa.base.DriverContext.getDriver;
+import static com.ecommerce.qa.util.CsvUtil.getPageTitle;
 
 public class HomePageTests extends BaseTest {
 
@@ -52,24 +53,24 @@ public class HomePageTests extends BaseTest {
 
     @Test
     public void shouldAddProductToCart() {
-        ExcelUtil alerts = new ExcelUtil("alert.xls");
+        ExcelUtil alerts = new ExcelUtil(envConfig.getExcelAlertsPath());
         BasePage homePage = new BasePage();
         AddToCartPopup addToCartPopup = homePage.openHomePage().addProductToCart();
         boolean allElementsDisplayed = addToCartPopup.allTheElementDisplayed();
         String successMessage = addToCartPopup.getSuccessMessage();
         Assert.assertTrue(allElementsDisplayed);
-        Assert.assertEquals(successMessage, alerts.getCellValue(0,3));
+        Assert.assertEquals(successMessage, alerts.getCellValue(0, 3));
     }
 
     @Test
-    public void shouldRedirectToContactUsPage(){
+    public void shouldRedirectToContactUsPage() {
         BasePage homePage = new BasePage();
         ContactPage contactPage = homePage.openHomePage().goToContactUsPage();
-        Assert.assertEquals(contactPage.getPageTitle(),getPageTitle("Contact Us"));
+        Assert.assertEquals(contactPage.getPageTitle(), getPageTitle("Contact Us"));
     }
 
     @Test
-    public void shouldDisplayProductReviewPopUpWindow(){
+    public void shouldDisplayProductReviewPopUpWindow() {
         BasePage homePage = new BasePage();
         boolean isPopUpDisplayed = homePage.openHomePage().openProductReviewPopUp();
         Assert.assertTrue(isPopUpDisplayed);

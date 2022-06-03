@@ -1,7 +1,7 @@
 package com.ecommerce.qa.pages;
 
 import com.ecommerce.qa.base.FrameworkInitialize;
-import com.ecommerce.qa.popup.AddToCartPopup;
+import com.ecommerce.qa.pages.popup.AddToCartPopup;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -10,9 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-import static com.ecommerce.qa.base.DriverContext.driver;
 import static com.ecommerce.qa.base.DriverContext.getDriver;
-
 
 
 public class BasePage extends FrameworkInitialize {
@@ -56,7 +54,7 @@ public class BasePage extends FrameworkInitialize {
     @FindBy(css = "a[class='quick-view']")
     private WebElement openProductPreviewButton;
 
-    @FindBy(css ="div[class*='fancybox-wrap']")
+    @FindBy(css = "div[class*='fancybox-wrap']")
     private WebElement productReviewPopUp;
 
     @FindBy(css = "span[class='shop-phone']")
@@ -83,8 +81,8 @@ public class BasePage extends FrameworkInitialize {
     @FindBy(css = "a[class*='bx-next']")
     private WebElement sliderNextButton;
 
-    @FindBy(css = "p[class*='alert']")
-    private WebElement newsletterAlert;
+    @FindBy(css = ".alert")
+    private WebElement alertMessage;
 
     @FindBy(xpath = "//a[text()='support@seleniumframework.com']")
     private WebElement redirectToMailToPage;
@@ -97,7 +95,6 @@ public class BasePage extends FrameworkInitialize {
 
     @FindBy(xpath = "(//div[@class='product-container'])[1]")
     private WebElement productContainer;
-
 
 
     public BasePage openHomePage() {
@@ -142,8 +139,8 @@ public class BasePage extends FrameworkInitialize {
     public String signUpForNewsletter(String email) {
         newsletterInput.sendKeys(email);
         submitNewsletterButton.click();
-        wait.until(ExpectedConditions.visibilityOf(newsletterAlert));
-        return newsletterAlert.getText();
+        wait.until(ExpectedConditions.visibilityOf(alertMessage));
+        return alertMessage.getText();
     }
 
     public boolean isLogoPresent() {
@@ -156,10 +153,14 @@ public class BasePage extends FrameworkInitialize {
         return new AddToCartPopup();
     }
 
-    public boolean openProductReviewPopUp(){
+    public boolean openProductReviewPopUp() {
         Actions actions = new Actions(getDriver());
         actions.moveToElement(productContainer).moveToElement(openProductPreviewButton).click().build().perform();
         wait.until(ExpectedConditions.visibilityOf(productReviewPopUp));
         return productReviewPopUp.isDisplayed();
+    }
+
+    public String getAlertMessage() {
+        return alertMessage.getText();
     }
 }

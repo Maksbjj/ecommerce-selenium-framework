@@ -1,4 +1,4 @@
-package com.ecommerce.qa.popup;
+package com.ecommerce.qa.pages.popup;
 
 import com.ecommerce.qa.pages.BasePage;
 import org.openqa.selenium.WebElement;

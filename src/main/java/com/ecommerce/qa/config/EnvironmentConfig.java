@@ -14,4 +14,13 @@ public interface EnvironmentConfig extends Config {
     @Key("user_pass")
     String getUserPassword();
 
+    @Key("page_titles_path")
+    String getPageTitlesPath();
+
+    @Key("alert_excel_path")
+    String getExcelAlertsPath();
+
+    @Key("upload_file_path")
+    String getUploadFilePath();
+
 }
