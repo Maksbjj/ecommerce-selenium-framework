@@ -9,7 +9,7 @@ import static com.ecommerce.qa.util.FakeDataGenerator.*;
 
 public class TestDataProvider {
 
-    protected static ExcelUtil alerts;
+    public static ExcelUtil alerts;
     protected static Map<String, String> pageTitles;
 
     @DataProvider(name = "newsletter_data")

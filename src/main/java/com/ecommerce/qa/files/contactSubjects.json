@@ -1,0 +1,19 @@
+{
+  "pageTitle": {
+  "home": "My Store",
+  "account":"My account - My Store",
+  "login":"Login - My Store",
+  "forgot_password":"Forgot your password - My Store",
+  "contact_us":"Contact us - My Store"
+  },
+  "contactSubjects": [
+    {
+      "name" : "Customer service",
+      "description" : "For any question about a product, an order"
+    },
+    {
+      "name" : "Webmaster",
+      "description" : "If a technical problem occurs on this website"
+    }
+  ]
+}

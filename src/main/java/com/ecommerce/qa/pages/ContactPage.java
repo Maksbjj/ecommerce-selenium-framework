@@ -68,6 +68,4 @@ public class ContactPage extends BasePage {
         submitContactFormButton.click();
         return new ContactPage();
     }
-
-
 }
