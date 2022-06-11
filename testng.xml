@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FirstSuite" parallel="methods" thread-count="10">
-    <test name="TestSuite">
+<suite name="HomePageSuite" parallel="methods" thread-count="30">
+    <test name="HomePage">
         <classes>
             <class name="com.ecommerce.qa.tests.HomePageTests"/>
+        </classes>
+    </test>
+    <test name="LoginPage">
+        <classes>
             <class name="com.ecommerce.qa.tests.LoginPageTests"/>
+        </classes>
+    </test>
+    <test name="ContactPage">
+        <classes>
+            <class name="com.ecommerce.qa.tests.ContactPageTests"/>
+        </classes>
+    </test>
+    <test name="ForgetPassword">
+        <classes>
+            <class name="com.ecommerce.qa.tests.ForgetPasswordPageTests"/>
         </classes>
     </test>
 </suite>

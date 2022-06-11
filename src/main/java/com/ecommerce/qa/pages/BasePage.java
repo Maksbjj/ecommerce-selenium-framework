@@ -1,6 +1,7 @@
 package com.ecommerce.qa.pages;
 
 import com.ecommerce.qa.base.FrameworkInitialize;
+import com.ecommerce.qa.pages.cartpages.CartSummaryPage;
 import com.ecommerce.qa.pages.popup.AddToCartPopup;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,6 +27,9 @@ public class BasePage extends FrameworkInitialize {
 
     @FindBy(name = "submit_search")
     private WebElement submitSearch;
+
+    @FindBy(css = "div[class='shopping_cart'] a")
+    private WebElement openCartButton;
 
     @FindBy(css = "ul[id='blockbestsellers'] li")
     private List<WebElement> listOfBestSellers;
@@ -82,7 +86,7 @@ public class BasePage extends FrameworkInitialize {
     private WebElement sliderNextButton;
 
     @FindBy(css = ".alert")
-    private WebElement alertMessage;
+    public WebElement alertMessage;
 
     @FindBy(xpath = "//a[text()='support@seleniumframework.com']")
     private WebElement redirectToMailToPage;
@@ -162,5 +166,10 @@ public class BasePage extends FrameworkInitialize {
 
     public String getAlertMessage() {
         return alertMessage.getText();
+    }
+
+    public CartSummaryPage openCartPage(){
+        openCartButton.click();
+        return new CartSummaryPage();
     }
 }

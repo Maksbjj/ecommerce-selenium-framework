@@ -59,12 +59,12 @@ public class ContactPage extends BasePage {
         return description;
     }
 
-    public ContactPage sendMessage(String subject, String filePath) {
+    public ContactPage sendMessage(String subject, String filePath,String email,String message) {
         chooseSubject(subject);
-        emailAddressField.sendKeys(envConfig.getUserEmail());
+        emailAddressField.sendKeys(email);
         orderReferenceInput.sendKeys(randomNumber());
         fileUploadInput.sendKeys(filePath);
-        textMessageInput.sendKeys(randomMessage());
+        textMessageInput.sendKeys(message);
         submitContactFormButton.click();
         return new ContactPage();
     }

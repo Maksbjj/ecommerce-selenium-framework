@@ -17,8 +17,11 @@ public interface EnvironmentConfig extends Config {
     @Key("page_titles_path")
     String getPageTitlesPath();
 
-    @Key("alert_excel_path")
-    String getExcelAlertsPath();
+    @Key("contact_subject_path")
+    String getContactSubjectsPath();
+
+    @Key("alerts_path")
+    String getAlertsPath();
 
     @Key("upload_file_path")
     String getUploadFilePath();

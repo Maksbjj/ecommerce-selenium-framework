@@ -1,0 +1,16 @@
+{
+  "newsletterSuccess" : "Newsletter : You have successfully subscribed to this newsletter.",
+  "newsletterRegistered": "Newsletter : This email address is already registered.",
+  "newsletterInvalidEmail": "Newsletter : Invalid email address.",
+  "productSuccess":"Product successfully added to your shopping cart",
+  "invalidEmail":"Invalid email address.",
+  "noAccount":"There is no account registered for this email address.",
+  "confirmationSuccess":"A confirmation email has been sent to your address: maxim3093@gmail.com",
+  "emailRequired":"An email address required.",
+  "authFailed":"Authentication failed.",
+  "passwordRequired":"Password is required.",
+  "contactSuccess": "Your message has been successfully sent to our team.",
+  "selectSubjectError":"Please select a subject from the list provided.",
+  "blankMessageError":"The message cannot be blank.",
+  "cartEmpty": "Your shopping cart is empty."
+}

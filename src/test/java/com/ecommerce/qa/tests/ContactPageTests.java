@@ -5,6 +5,8 @@ import com.ecommerce.qa.pages.ContactPage;
 import com.ecommerce.qa.util.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static com.ecommerce.qa.util.FakeDataGenerator.randomMessage;
+import static com.ecommerce.qa.util.FakeDataGenerator.validEmail;
 
 public class ContactPageTests extends BaseTest {
 
@@ -20,19 +22,18 @@ public class ContactPageTests extends BaseTest {
         BasePage basePage = new BasePage();
         ContactPage contactPage = basePage.openHomePage()
                 .goToContactUsPage()
-                .sendMessage(subject, envConfig.getUploadFilePath());
+                .sendMessage(subject, envConfig.getUploadFilePath(),validEmail(),randomMessage());
         String alertMessage = contactPage.getAlertMessage();
-        Assert.assertEquals(alertMessage, alerts.getCellValue(0, 10));
+        Assert.assertEquals(alertMessage, alerts.getContactSuccess());
     }
 
-    @Test
-    public void shouldFailToSentMessageWithoutChosenSubject() {
+    @Test(dataProvider = "fail_contact_form_data", dataProviderClass = TestDataProvider.class)
+    public void shouldFailToSubmitContactForm(String subject,String email,String message,String alertMessage) {
         BasePage basePage = new BasePage();
         ContactPage contactPage = basePage.openHomePage()
                 .goToContactUsPage()
-                .sendMessage("-- Choose --", envConfig.getUploadFilePath());
-        String alertMessage = contactPage.getAlertMessage();
-        Assert.assertTrue(alertMessage.contains(alerts.getCellValue(0, 11)));
+                .sendMessage(subject, envConfig.getUploadFilePath(),email,message);
+        String alert = contactPage.getAlertMessage();
+        Assert.assertTrue(alert.contains(alertMessage));
     }
-
 }

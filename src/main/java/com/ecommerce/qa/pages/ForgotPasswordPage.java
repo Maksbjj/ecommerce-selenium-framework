@@ -19,8 +19,6 @@ public class ForgotPasswordPage extends BasePage {
     @FindBy(css ="a[title='Back to Login']")
     private WebElement backToLoginPageButton;
 
-    @FindBy(css = "div[class*='alert']")
-    private WebElement alert;
 
     @FindBy(css = "a[title='Authentication']")
     private WebElement breadCrumbGoBackToLoginButton;
@@ -29,8 +27,8 @@ public class ForgotPasswordPage extends BasePage {
     public String submitForgotEmailInput(String email){
         emailInput.sendKeys(email);
         submitInput.click();
-        wait.until(ExpectedConditions.visibilityOf(alert));
-        return alert.getText();
+        wait.until(ExpectedConditions.visibilityOf(alertMessage));
+        return alertMessage.getText();
     }
 
     public LoginPage goBackToLoginPage(){

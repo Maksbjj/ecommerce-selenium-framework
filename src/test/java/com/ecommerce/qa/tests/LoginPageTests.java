@@ -7,7 +7,7 @@ import com.ecommerce.qa.util.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static com.ecommerce.qa.util.CsvUtil.getPageTitle;
+
 
 public class LoginPageTests extends BaseTest {
 
@@ -17,7 +17,7 @@ public class LoginPageTests extends BaseTest {
         BasePage basePage = new BasePage();
         AccountPage accountPage = basePage.openHomePage().openLoginPage().login();
         String pageTitle = accountPage.getPageTitle();
-        Assert.assertEquals(pageTitle, getPageTitle("Account"));
+        Assert.assertEquals(pageTitle, pageTitles.getAccount());
     }
 
     @Test(dataProvider = "failed_login_data", dataProviderClass = TestDataProvider.class)
@@ -32,7 +32,6 @@ public class LoginPageTests extends BaseTest {
         BasePage basePage = new BasePage();
         ForgotPasswordPage forgotPassword = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
         String pageTitle = forgotPassword.getPageTitle();
-        Assert.assertEquals(pageTitle, getPageTitle("Forgot password"));
+        Assert.assertEquals(pageTitle, pageTitles.getForgotPassword());
     }
-
 }

@@ -1,8 +1,10 @@
 package com.ecommerce.qa.base;
 
 import com.ecommerce.qa.config.EnvironmentConfig;
-import com.ecommerce.qa.util.ExcelUtil;
 import com.ecommerce.qa.util.TestDataProvider;
+import com.ecommerce.qa.util.pojo.Alerts;
+import com.ecommerce.qa.util.pojo.ContactSubject;
+import com.ecommerce.qa.util.pojo.PageTitle;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,15 +14,12 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
 import static com.ecommerce.qa.base.DriverContext.getDriver;
-import static com.ecommerce.qa.util.CsvUtil.readPageTitles;
+import static com.ecommerce.qa.util.JsonUtil.readJsonToPojo;
 
 public class FrameworkInitialize extends TestDataProvider {
 
     public static WebDriverWait wait;
-    public static EnvironmentConfig envConfig;
-
 
     public void initializeBrowser(BrowserType browser) {
         switch (browser) {
@@ -59,12 +58,10 @@ public class FrameworkInitialize extends TestDataProvider {
         wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
     }
 
-    public static void createEnvConfig() {
-        envConfig = ConfigFactory.create(EnvironmentConfig.class);
-    }
-
     public static void loadTestData() {
-        alerts = new ExcelUtil(envConfig.getExcelAlertsPath());
-        readPageTitles();
+        envConfig = ConfigFactory.create(EnvironmentConfig.class);
+        alerts = readJsonToPojo(Alerts.class,envConfig.getAlertsPath());
+        pageTitles = readJsonToPojo(PageTitle.class,envConfig.getPageTitlesPath());
+        subjects = readJsonToPojo(ContactSubject.class,envConfig.getContactSubjectsPath());
     }
 }

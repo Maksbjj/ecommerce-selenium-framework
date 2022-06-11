@@ -1,6 +1,7 @@
 package com.ecommerce.qa.pages.popup;
 
 import com.ecommerce.qa.pages.BasePage;
+import com.ecommerce.qa.pages.cartpages.CartSummaryPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -67,5 +68,11 @@ public class AddToCartPopup extends BasePage {
 
     public String getSuccessMessage() {
         return successMessage.getText();
+    }
+
+    public CartSummaryPage proceedToTheCartPage(){
+        wait.until(ExpectedConditions.visibilityOf(proceedToCheckoutButton));
+        proceedToCheckoutButton.click();
+        return new CartSummaryPage();
     }
 }
