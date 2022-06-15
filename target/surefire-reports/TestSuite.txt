@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.365 sec <<< FAILURE!
+shouldShowAlertForEmptyCart(com.ecommerce.qa.tests.CartPageTests)  Time elapsed: 9.336 sec  <<< FAILURE!
+java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
+

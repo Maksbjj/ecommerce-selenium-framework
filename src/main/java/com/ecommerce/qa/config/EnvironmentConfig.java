@@ -26,4 +26,7 @@ public interface EnvironmentConfig extends Config {
     @Key("upload_file_path")
     String getUploadFilePath();
 
+    @Key("home_page_categories_path")
+    String getHomePageCategoriesPath();
+
 }

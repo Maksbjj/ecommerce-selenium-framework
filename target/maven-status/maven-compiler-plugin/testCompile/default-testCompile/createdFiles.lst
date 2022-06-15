@@ -1,1 +1,6 @@
+com\ecommerce\qa\tests\BaseTest.class
+com\ecommerce\qa\tests\CartPageTests.class
 com\ecommerce\qa\tests\HomePageTests.class
+com\ecommerce\qa\tests\LoginPageTests.class
+com\ecommerce\qa\tests\ContactPageTests.class
+com\ecommerce\qa\tests\ForgetPasswordPageTests.class

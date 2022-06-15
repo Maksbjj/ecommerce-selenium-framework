@@ -1,27 +1,22 @@
 package com.ecommerce.qa.tests;
 
-import com.ecommerce.qa.pages.BasePage;
-import com.ecommerce.qa.pages.ContactPage;
-import com.ecommerce.qa.pages.popup.AddToCartPopup;
-import com.ecommerce.qa.util.TestDataProvider;
+import com.ecommerce.qa.pageobjects.HomePage;
+import com.ecommerce.qa.pageobjects.ContactPage;
+import com.ecommerce.qa.pageobjects.ProductPage;
+import com.ecommerce.qa.pageobjects.popup.AddToCartPopup;
+import com.ecommerce.qa.utils.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import static com.ecommerce.qa.base.DriverContext.getDriver;
+import static com.ecommerce.qa.utils.TestDataProvider.alerts;
+import static com.ecommerce.qa.utils.TestDataProvider.pageTitles;
 
 
 public class HomePageTests extends BaseTest {
 
-    @Test
-    public void shouldReturnActualPageTitle() {
-        BasePage homePage = new BasePage();
-
-        String pageTitle = homePage.openHomePage().getPageTitle();
-        Assert.assertEquals(pageTitle, pageTitles.getHome());
-    }
 
     @Test(dataProvider = "newsletter_data", dataProviderClass = TestDataProvider.class)
     public void shouldReturnCorrectNewsletterAlertMessage(String email, String alertMessage) {
-        BasePage homePage = new BasePage();
+        HomePage homePage = new HomePage();
         String message = homePage.openHomePage().signUpForNewsletter(email);
         Assert.assertEquals(message, alertMessage);
     }
@@ -29,29 +24,28 @@ public class HomePageTests extends BaseTest {
 
     @Test
     public void shouldDisplayHomeContentImages() {
-        BasePage homePage = new BasePage();
-
+        HomePage homePage = new HomePage();
         boolean areImagesDisplayed = homePage.openHomePage().validateHomeContentImages();
         Assert.assertTrue(areImagesDisplayed);
     }
 
     @Test
     public void shouldDisplayHomePageLogo() {
-        BasePage homePage = new BasePage();
-        boolean isLogoDisplayed = homePage.openHomePage().isLogoPresent();
+        HomePage homePage = new HomePage();
+        boolean isLogoDisplayed = homePage.openHomePage().isLogoPresented();
         Assert.assertTrue(isLogoDisplayed);
     }
 
     @Test
     public void shouldRedirectToProductPage() {
-        BasePage homePage = new BasePage();
-        homePage.openHomePage().openProductPage();
-        Assert.assertTrue(getDriver().getCurrentUrl().contains("product"));
+        HomePage homePage = new HomePage();
+        ProductPage productPage = homePage.openHomePage().openProductPage();
+        Assert.assertTrue(getPageTitle().contains(productPage.getProductName()));
     }
 
     @Test
-    public void shouldAddProductToCart() {
-        BasePage homePage = new BasePage();
+    public void shouldAddProductToCartFromHomePage() {
+        HomePage homePage = new HomePage();
         AddToCartPopup addToCartPopup = homePage.openHomePage().addProductToCart();
         boolean allElementsDisplayed = addToCartPopup.allTheElementDisplayed();
         String successMessage = addToCartPopup.getSuccessMessage();
@@ -59,18 +53,26 @@ public class HomePageTests extends BaseTest {
         Assert.assertEquals(successMessage, alerts.getProductSuccess());
     }
 
+
     @Test
     public void shouldRedirectToContactUsPage() {
-        BasePage homePage = new BasePage();
-        ContactPage contactPage = homePage.openHomePage().goToContactUsPage();
+        HomePage homePage = new HomePage();
+        ContactPage contactPage = homePage.openHomePage().openContactUsPage();
         Assert.assertEquals(contactPage.getPageTitle(), pageTitles.getContactUs());
     }
 
     @Test
     public void shouldDisplayProductReviewPopUpWindow() {
-        BasePage homePage = new BasePage();
+        HomePage homePage = new HomePage();
         boolean isPopUpDisplayed = homePage.openHomePage().openProductReviewPopUp();
         Assert.assertTrue(isPopUpDisplayed);
+    }
+
+    @Test(dataProvider = "homepage_product_categories",dataProviderClass = TestDataProvider.class)
+    public void shouldDisplayAllTheContentInsideCategoryDropdownMenu(String categoryName){
+        HomePage homePage = new HomePage();
+        boolean areAllTheCategoriesPresent = homePage.openHomePage().areAllTheCategoriesPresent(categoryName);
+        Assert.assertTrue(areAllTheCategoriesPresent);
     }
 
 }

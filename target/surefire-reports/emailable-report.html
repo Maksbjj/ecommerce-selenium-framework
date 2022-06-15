@@ -8,18 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">com.ecommerce.qa.tests.HomePageTests</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">93,872</td><td></td><td></td></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">HomePage</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,988</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.ecommerce.qa.tests.HomePageTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.ecommerce.qa.tests.HomePageTests</td><td><a href="#m0">shouldAddProductToCart</a></td><td rowspan="1">1653506995169</td><td rowspan="1">2892</td></tr><tr class="passedeven"><td><a href="#m1">shouldDisplayHomeContentImages</a></td><td rowspan="1">1653507006196</td><td rowspan="1">164</td></tr><tr class="passedeven"><td><a href="#m2">shouldDisplayHomePageLogo</a></td><td rowspan="1">1653507014992</td><td rowspan="1">38</td></tr><tr class="passedeven"><td><a href="#m3">shouldRedirectToProductPage</a></td><td rowspan="1">1653507029998</td><td rowspan="1">7206</td></tr><tr class="passedeven"><td><a href="#m4">shouldReturnActualPageTitle</a></td><td rowspan="1">1653507045385</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m5">shouldReturnCorrectNewsletterAlertMessage</a></td><td rowspan="3">1653507065746</td><td rowspan="3">3370</td></tr><tr class="passedeven"><td><a href="#m6">shouldReturnCorrectNewsletterAlertMessage</a></td></tr><tr class="passedeven"><td><a href="#m7">shouldReturnCorrectNewsletterAlertMessage</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomePage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ecommerce.qa.tests.CartPageTests</td><td><a href="#m0">shouldShowAlertForEmptyCart</a></td><td rowspan="1">1655120074504</td><td rowspan="1">9162</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.ecommerce.qa.tests.HomePageTests#shouldAddProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ecommerce.qa.tests.HomePageTests#shouldDisplayHomeContentImages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ecommerce.qa.tests.HomePageTests#shouldDisplayHomePageLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.ecommerce.qa.tests.HomePageTests#shouldRedirectToProductPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.ecommerce.qa.tests.HomePageTests#shouldReturnActualPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>com.github.javafaker.Name@3d7b3b18</td><td>Newsletter : Invalid email address.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>maxim3093@gmail.com</td><td>Newsletter : This email address is already registered.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>adrian.huels@yahoo.com</td><td>Newsletter : You have successfully subscribed to this newsletter.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePage</h2><h3 id="m0">com.ecommerce.qa.tests.CartPageTests#shouldShowAlertForEmptyCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
+	at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

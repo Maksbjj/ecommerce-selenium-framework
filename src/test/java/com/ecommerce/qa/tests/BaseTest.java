@@ -1,13 +1,12 @@
 package com.ecommerce.qa.tests;
 
 import com.ecommerce.qa.base.BrowserType;
-import com.ecommerce.qa.base.FrameworkInitialize;
+import com.ecommerce.qa.base.BasePage;
 import org.testng.annotations.*;
 
-import static com.ecommerce.qa.base.DriverContext.getDriver;
-import static com.ecommerce.qa.base.DriverContext.initializeDriver;
+import static com.ecommerce.qa.base.DriverContext.*;
 
-public abstract class BaseTest extends FrameworkInitialize {
+public abstract class BaseTest extends BasePage {
 
 
     @BeforeTest
@@ -17,12 +16,11 @@ public abstract class BaseTest extends FrameworkInitialize {
 
     @BeforeMethod
     public void setUp() {
-        initializeDriver();
         initializeBrowser(BrowserType.CHROME);
         deleteCookies();
         maximizeWindow();
         setImplicitTimeout();
-        setExplicitTimeout();
+        setFluentWaits();
     }
 
     @AfterMethod

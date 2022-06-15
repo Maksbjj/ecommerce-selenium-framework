@@ -1,18 +1,20 @@
 package com.ecommerce.qa.tests;
 
-import com.ecommerce.qa.pages.BasePage;
-import com.ecommerce.qa.pages.ForgotPasswordPage;
-import com.ecommerce.qa.pages.LoginPage;
-import com.ecommerce.qa.util.TestDataProvider;
+import com.ecommerce.qa.pageobjects.HomePage;
+import com.ecommerce.qa.pageobjects.ForgotPasswordPage;
+import com.ecommerce.qa.pageobjects.LoginPage;
+import com.ecommerce.qa.utils.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static com.ecommerce.qa.utils.TestDataProvider.pageTitles;
 
 
 public class ForgetPasswordPageTests extends BaseTest {
 
     @Test(dataProvider = "forgot_password_data", dataProviderClass = TestDataProvider.class)
     public void submitForgotPasswordForm(String email, String message) {
-        BasePage basePage = new BasePage();
+        HomePage basePage = new HomePage();
         ForgotPasswordPage forgotPasswordPage = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
         String alertMessage = forgotPasswordPage.submitForgotEmailInput(email);
         Assert.assertTrue(alertMessage.contains(message));
@@ -20,7 +22,7 @@ public class ForgetPasswordPageTests extends BaseTest {
 
     @Test
     public void goBackToLoginPage() {
-        BasePage basePage = new BasePage();
+        HomePage basePage = new HomePage();
         ForgotPasswordPage forgotPasswordPage = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
         LoginPage loginPage = forgotPasswordPage.goBackToLoginPage();
         Assert.assertEquals(loginPage.getPageTitle(), pageTitles.getLogin());
@@ -28,7 +30,7 @@ public class ForgetPasswordPageTests extends BaseTest {
 
     @Test
     public void goBackToLoginPageByBreadCrumbButton() {
-        BasePage basePage = new BasePage();
+        HomePage basePage = new HomePage();
         ForgotPasswordPage forgotPasswordPage = basePage.openHomePage().openLoginPage().goToForgotPasswordPage();
         LoginPage loginPage = forgotPasswordPage.goBackToLoginPageByBreadCrumb();
         Assert.assertEquals(loginPage.getPageTitle(), pageTitles.getLogin());

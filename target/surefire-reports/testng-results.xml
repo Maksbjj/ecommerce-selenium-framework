@@ -1,145 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-25T21:29:46 CEST" name="com.ecommerce.qa.tests.HomePageTests" finished-at="2022-05-25T21:31:20 CEST" duration-ms="93872">
+  <suite started-at="2022-06-13T13:34:29 CEST" name="All Test Suite" finished-at="2022-06-13T13:34:44 CEST" duration-ms="14988">
     <groups>
     </groups>
-    <test started-at="2022-05-25T21:29:46 CEST" name="Command line test" finished-at="2022-05-25T21:31:20 CEST" duration-ms="93872">
-      <class name="com.ecommerce.qa.tests.HomePageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:29:46 CEST" name="setUp" finished-at="2022-05-25T21:29:55 CEST" duration-ms="8174" status="PASS">
+    <test started-at="2022-06-13T13:34:29 CEST" name="HomePage" finished-at="2022-06-13T13:34:44 CEST" duration-ms="14988">
+      <class name="com.ecommerce.qa.tests.CartPageTests">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:29 CEST" name="readTestData" finished-at="2022-06-13T13:34:29 CEST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:29 CEST" name="setUp" finished-at="2022-06-13T13:34:34 CEST" duration-ms="4595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="shouldAddProductToCart()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:29:55 CEST" name="shouldAddProductToCart" finished-at="2022-05-25T21:29:58 CEST" duration-ms="2892" status="PASS">
+        <test-method signature="shouldShowAlertForEmptyCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:34 CEST" name="shouldShowAlertForEmptyCart" finished-at="2022-06-13T13:34:43 CEST" duration-ms="9162" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [123] but found [Your shopping cart is empty.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAddProductToCart -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:29:58 CEST" name="cleanUp" finished-at="2022-05-25T21:29:58 CEST" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:29:58 CEST" name="setUp" finished-at="2022-05-25T21:30:06 CEST" duration-ms="7945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldDisplayHomeContentImages()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:06 CEST" name="shouldDisplayHomeContentImages" finished-at="2022-05-25T21:30:06 CEST" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldDisplayHomeContentImages -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:06 CEST" name="cleanUp" finished-at="2022-05-25T21:30:06 CEST" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:06 CEST" name="setUp" finished-at="2022-05-25T21:30:14 CEST" duration-ms="8487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldDisplayHomePageLogo()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:14 CEST" name="shouldDisplayHomePageLogo" finished-at="2022-05-25T21:30:15 CEST" duration-ms="38" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldDisplayHomePageLogo -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:15 CEST" name="cleanUp" finished-at="2022-05-25T21:30:15 CEST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:15 CEST" name="setUp" finished-at="2022-05-25T21:30:29 CEST" duration-ms="14789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldRedirectToProductPage()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:29 CEST" name="shouldRedirectToProductPage" finished-at="2022-05-25T21:30:37 CEST" duration-ms="7206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldRedirectToProductPage -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:37 CEST" name="cleanUp" finished-at="2022-05-25T21:30:37 CEST" duration-ms="179" status="PASS">
+        </test-method> <!-- shouldShowAlertForEmptyCart -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:43 CEST" name="cleanUp" finished-at="2022-06-13T13:34:44 CEST" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:37 CEST" name="setUp" finished-at="2022-05-25T21:30:45 CEST" duration-ms="8000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldReturnActualPageTitle()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:45 CEST" name="shouldReturnActualPageTitle" finished-at="2022-05-25T21:30:45 CEST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldReturnActualPageTitle -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:45 CEST" name="cleanUp" finished-at="2022-05-25T21:30:45 CEST" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:45 CEST" name="setUp" finished-at="2022-05-25T21:30:52 CEST" duration-ms="6924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:52 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-05-25T21:30:58 CEST" duration-ms="5675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adrian.huels@yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Newsletter : You have successfully subscribed to this newsletter.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:58 CEST" name="cleanUp" finished-at="2022-05-25T21:30:58 CEST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:30:58 CEST" name="setUp" finished-at="2022-05-25T21:31:05 CEST" duration-ms="7223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:31:05 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-05-25T21:31:09 CEST" duration-ms="3370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.github.javafaker.Name@3d7b3b18]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Newsletter : Invalid email address.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:31:09 CEST" name="cleanUp" finished-at="2022-05-25T21:31:09 CEST" duration-ms="178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:31:09 CEST" name="setUp" finished-at="2022-05-25T21:31:17 CEST" duration-ms="7729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:31:17 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-05-25T21:31:20 CEST" duration-ms="3605" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[maxim3093@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Newsletter : This email address is already registered.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@769f71a9]" started-at="2022-05-25T21:31:20 CEST" name="cleanUp" finished-at="2022-05-25T21:31:20 CEST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- com.ecommerce.qa.tests.HomePageTests -->
-    </test> <!-- Command line test -->
-  </suite> <!-- com.ecommerce.qa.tests.HomePageTests -->
+      </class> <!-- com.ecommerce.qa.tests.CartPageTests -->
+    </test> <!-- HomePage -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

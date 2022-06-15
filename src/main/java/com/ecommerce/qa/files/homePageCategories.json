@@ -1,0 +1,31 @@
+{
+  "women": {
+    "categories": [
+      {
+        "name": "tops"
+      },
+      {
+        "name": "dresses"
+      }
+    ],
+    "tops": [
+      {
+        "name": "T-shirts"
+      },
+      {
+        "name": "Blouses"
+      }
+    ],
+    "dresses": [
+      {
+        "name": "Casual Dresses"
+      },
+      {
+        "name": "Evening Dresses"
+      },
+      {
+        "name": "Summer Dresses"
+      }
+    ]
+  }
+}
