@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="methods" thread-count="2">
+<suite name="All Test Suite">
     <test name="CartPageTests">
+        <parameter name="Browser" value="MicrosoftEdge"/>
         <classes>
             <class name="com.ecommerce.qa.tests.CartPageTests"/>
         </classes>
     </test>
     <test name="LoginPageTests">
+        <parameter name="Browser" value="firefox"/>
         <classes>
             <class name="com.ecommerce.qa.tests.LoginPageTests"/>
         </classes>
     </test>
     <test name="ContactPageTests">
+        <parameter name="Browser" value="chrome"/>
         <classes>
             <class name="com.ecommerce.qa.tests.ContactPageTests"/>
         </classes>
     </test>
     <test name="ForgetPasswordPageTests">
+        <parameter name="Browser" value="firefox"/>
         <classes>
             <class name="com.ecommerce.qa.tests.ForgetPasswordPageTests"/>
         </classes>
     </test>
     <test name="HomePageTests">
+        <parameter name="Browser" value="MicrosoftEdge"/>
         <classes>
             <class name="com.ecommerce.qa.tests.HomePageTests"/>
         </classes>

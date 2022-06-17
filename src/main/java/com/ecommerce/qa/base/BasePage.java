@@ -9,17 +9,24 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 
-import static com.ecommerce.qa.base.DriverContext.getDriver;
+import static com.ecommerce.qa.base.DriverContext.driver;
 import static com.ecommerce.qa.utils.JsonUtil.readJsonToPojo;
 import static com.ecommerce.qa.utils.TestDataProvider.*;
 
@@ -31,47 +38,60 @@ public class BasePage {
     private static final int WAIT_TIMEOUT_LONG = 60;
     private static final int WAIT_TIMEOUT_SHORT = 30;
     private static final int WAIT_POLLING_TIMEOUT = 500;
+    private static final String GRID_LOCAL_URL = "http://192.168.8.104:4444";
 
-    public void initializeBrowser(BrowserType browser) {
-        switch (browser) {
-            case FIREFOX -> {
-                WebDriverManager.firefoxdriver().setup();
-                DriverContext.driver.set(new FirefoxDriver());
+
+    public static void initializeBrowser(String browserName) {
+        DesiredCapabilities cap = new DesiredCapabilities();
+        try{
+        switch (browserName) {
+            case "chrome" -> {
+                cap.setPlatform(Platform.ANY);
+                cap.setBrowserName(browserName);
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.merge(cap);
+                driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), chromeOptions);
             }
-            case CHROME -> {
-                WebDriverManager.chromedriver().setup();
-                DriverContext.driver.set(new ChromeDriver());
+                case "firefox" -> {
+                    cap.setPlatform(Platform.ANY);
+                    cap.setBrowserName(browserName);
+                    ChromeOptions chromeOptions = new ChromeOptions()
+                            .setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+                    chromeOptions.merge(cap);
+                    driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), chromeOptions);
             }
-            case IE -> {
-                WebDriverManager.iedriver().setup();
-                DriverContext.driver.set(new InternetExplorerDriver());
+            case "MicrosoftEdge" -> {
+                cap.setPlatform(Platform.ANY);
+                cap.setBrowserName(browserName);
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.merge(cap);
+                driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL),edgeOptions);
             }
-            case SAFARI -> {
-                WebDriverManager.safaridriver().setup();
-                DriverContext.driver.set(new SafariDriver());
-            }
+        }
+        } catch (MalformedURLException e) {
+            e.getStackTrace();
         }
     }
 
     public void maximizeWindow() {
-        getDriver().manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public void deleteCookies() {
-        getDriver().manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
     }
 
     public void setImplicitTimeout() {
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
     public static void setFluentWaits() {
-        fluentWaitLong = new FluentWait<>(getDriver())
+        fluentWaitLong = new FluentWait<>(driver)
                 .pollingEvery(Duration.ofMillis(WAIT_POLLING_TIMEOUT))
                 .withTimeout(Duration.ofSeconds(WAIT_TIMEOUT_LONG))
                 .ignoring(StaleElementReferenceException.class)
                 .ignoring(NoSuchElementException.class);
-        fluentWaitShort = new FluentWait<>(getDriver())
+        fluentWaitShort = new FluentWait<>(driver)
                 .pollingEvery(Duration.ofMillis(WAIT_POLLING_TIMEOUT))
                 .withTimeout(Duration.ofSeconds(WAIT_TIMEOUT_SHORT))
                 .ignoring(StaleElementReferenceException.class)
@@ -92,7 +112,7 @@ public class BasePage {
     }
 
     public String getPageTitle() {
-        return getDriver().getTitle();
+        return driver.getTitle();
     }
 
     public boolean isElementPresented(WebElement element) {
@@ -118,8 +138,8 @@ public class BasePage {
     }
 
     protected void waitUntilJqueryIsDone() {
-        fluentWaitLong.until((ExpectedCondition<Boolean>) driver -> {
-            JavascriptExecutor js = (JavascriptExecutor) getDriver();
+        fluentWaitLong.until((ExpectedCondition<Boolean>) x -> {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
             return (Boolean) js.executeScript("return jQuery.active == 0");
         });
     }

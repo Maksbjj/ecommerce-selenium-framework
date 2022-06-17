@@ -14,9 +14,10 @@ public abstract class BaseTest extends BasePage {
         loadTestData();
     }
 
+    @Parameters({"Browser"})
     @BeforeMethod
-    public void setUp() {
-        initializeBrowser(BrowserType.CHROME);
+    public void setUp(String browser) {
+        initializeBrowser(browser);
         deleteCookies();
         maximizeWindow();
         setImplicitTimeout();
@@ -25,6 +26,6 @@ public abstract class BaseTest extends BasePage {
 
     @AfterMethod
     public void cleanUp() {
-        getDriver().quit();
+        driver.quit();
     }
 }

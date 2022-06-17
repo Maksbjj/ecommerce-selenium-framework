@@ -12,7 +12,7 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.ecommerce.qa.base.DriverContext.getDriver;
+import static com.ecommerce.qa.base.DriverContext.driver;
 import static com.ecommerce.qa.utils.TestDataProvider.*;
 
 
@@ -23,7 +23,7 @@ public class HomePage extends BasePage {
 
 
     public HomePage() {
-        PageFactory.initElements(getDriver(), this);
+        PageFactory.initElements(driver, this);
     }
 
 
@@ -122,7 +122,7 @@ public class HomePage extends BasePage {
 
 
     public HomePage openHomePage() {
-        getDriver().get(envConfig.getBaseUrl());
+        driver.get(envConfig.getBaseUrl());
         return new HomePage();
     }
 
@@ -133,7 +133,7 @@ public class HomePage extends BasePage {
     }
 
     public ProductPage openProductPage() {
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(driver);
         actions.moveToElement(productContainer).moveToElement(openProductPageButton).click().build().perform();
         return new ProductPage();
     }
@@ -163,13 +163,13 @@ public class HomePage extends BasePage {
 
 
     public AddToCartPopup addProductToCart() {
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(driver);
         actions.moveToElement(productContainer).moveToElement(addToCartButton).click().build().perform();
         return new AddToCartPopup();
     }
 
     public boolean openProductReviewPopUp() {
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(driver);
         actions.moveToElement(productContainer).moveToElement(openProductPreviewButton).click().build().perform();
         waitForElementToBeDisplayed(productReviewPopUp);
         return isElementPresented(productReviewPopUp);
@@ -215,7 +215,7 @@ public class HomePage extends BasePage {
         }
 
     public void chooseCategory(String categoryName) {
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(driver);
         if (categoryName.equalsIgnoreCase(DRESSES_CATEGORY_NAME)) {
             actions.moveToElement(dressesCategory.get(1)).build().perform();
         } else if (categoryName.equalsIgnoreCase(WOMEN_CATEGORY_NAME)) {

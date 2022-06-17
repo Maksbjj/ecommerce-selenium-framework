@@ -45,7 +45,7 @@ public class AllureListener implements ITestListener, ISuiteListener {
 
     @Attachment(value = "Screenshot", type = "image/png")
     public byte[] saveFailureScreenShoot() {
-        return ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Attachment(value ="0",type = "text/plain")

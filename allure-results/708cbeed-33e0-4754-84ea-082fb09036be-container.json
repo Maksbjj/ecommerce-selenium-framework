@@ -1,1 +1,0 @@
-{"uuid":"708cbeed-33e0-4754-84ea-082fb09036be","name":"ecommerce","children":["c4ae491d-2819-4176-b68d-407d62376cb0"],"befores":[{"name":"readTestData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1655211807178,"stop":1655211807526}],"afters":[],"start":1655211807134,"stop":1655211861578}
