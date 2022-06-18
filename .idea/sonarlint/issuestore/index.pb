@@ -1,6 +1,4 @@
 
-e
-5src/main/java/com/ecommerce/qa/utils/pojo/Alerts.java,6\5\65ddbafd5268b168931c3d8d686aa3623c36c7b0
 y
 Isrc/main/java/com/ecommerce/qa/pageobjects/cartpages/CartAddressPage.java,c\c\cce5a05449d2f45063531313c303188807ebde32
 y
@@ -13,10 +11,6 @@ y
 Isrc/main/java/com/ecommerce/qa/pageobjects/cartpages/CartSummaryPage.java,6\f\6fcbc00fada590984bf961fcc320fb11672751e7
 i
 9src/main/java/com/ecommerce/qa/files/contactSubjects.json,e\5\e5b9af1d95284a52f9019fbfb51a6c36cb21ecc5
-l
-<src/main/java/com/ecommerce/qa/files/contactFormSendFile.txt,4\a\4aa3933d80a171d5a39295b0467aff9bc8201056
-`
-0src/main/java/com/ecommerce/qa/files/alerts.json,2\0\203c8252715848059adf8c1611f20baac4856172
 h
 8src/main/java/com/ecommerce/qa/utils/pojo/PageTitle.java,e\f\efde0c33184786a7fdc4d18f31377a87fa6e0c48
 r
@@ -39,8 +33,6 @@ l
 <src/main/java/com/ecommerce/qa/files/homePageCategories.json,8\b\8bd690c8fdcf451a9366556a24ca9ed6f274505b
 w
 Gsrc/main/java/com/ecommerce/qa/utils/pojo/homepagecategories/Women.java,1\0\104697c4415ff6e075cb4b67a9f8df3b3512a691
-j
-:src/main/java/com/ecommerce/qa/utils/TestDataProvider.java,7\e\7e2afb83b0985e56cdfe7919ce563cca3ebf9d8e
 k
 ;src/main/java/com/ecommerce/qa/utils/FakeDataGenerator.java,6\2\62bd14772b44137a5a3e8f768d673af16d5f6db8
 q
@@ -53,8 +45,6 @@ i
 9src/main/java/com/ecommerce/qa/pageobjects/LoginPage.java,4\a\4a8e1173de1ef1b6ca841e9173603cb257880e4c
 k
 ;src/main/java/com/ecommerce/qa/pageobjects/ProductPage.java,e\0\e035dad8fbed918d39bf39f2f7ef57fbbd19f06e
-k
-;src/main/java/com/ecommerce/qa/pageobjects/ContactPage.java,9\1\91d34c79e4fd4629ae33421c4bea5fe25ce94cc5
 l
 <src/main/java/com/ecommerce/qa/pageobjects/CategoryPage.java,8\9\89a5448e312988192ec832871a1a9dae91fe8a45
 g

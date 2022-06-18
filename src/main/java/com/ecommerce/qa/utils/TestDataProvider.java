@@ -57,7 +57,7 @@ public class TestDataProvider {
     @DataProvider(name = "fail_contact_form_data")
     public Object[][] getFailContactFormData() {
         return new Object[][]{{subjects.getSubjects()[0].getName(),
-                "", randomMessage(), alerts.getEmailRequired()},
+                "", randomMessage(), alerts.getInvalidEmail()},
                 {subjects.getSubjects()[1].getName(),
                         randomNumber(), randomMessage(), alerts.getInvalidEmail()},
                 {subjects.getSubjects()[0].getName(),

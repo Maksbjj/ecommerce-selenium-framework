@@ -28,5 +28,4 @@ public interface EnvironmentConfig extends Config {
 
     @Key("home_page_categories_path")
     String getHomePageCategoriesPath();
-
 }

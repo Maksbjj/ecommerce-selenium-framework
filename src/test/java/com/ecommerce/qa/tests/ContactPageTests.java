@@ -35,7 +35,8 @@ public class ContactPageTests extends BaseTest {
         ContactPage contactPage = basePage.openHomePage()
                 .openContactUsPage()
                 .sendMessage(subject, envConfig.getUploadFilePath(),email,message);
-        String alert = contactPage.getElementsText(contactPage.getAlertMessage());
+        String alert = getElementsText(contactPage.getAlertMessage());
+        waitForElementToBeDisplayed(contactPage.getAlertMessage());
         Assert.assertTrue(alert.contains(alertMessage));
     }
 }
