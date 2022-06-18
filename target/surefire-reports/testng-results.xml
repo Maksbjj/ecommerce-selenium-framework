@@ -1,34 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="34" passed="29" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-13T13:34:29 CEST" name="All Test Suite" finished-at="2022-06-13T13:34:44 CEST" duration-ms="14988">
+  <suite started-at="2022-06-18T12:52:36 CEST" name="All Test Suite" finished-at="2022-06-18T12:58:35 CEST" duration-ms="359339">
     <groups>
     </groups>
-    <test started-at="2022-06-13T13:34:29 CEST" name="HomePage" finished-at="2022-06-13T13:34:44 CEST" duration-ms="14988">
+    <test started-at="2022-06-18T12:52:36 CEST" name="CartPageTests" finished-at="2022-06-18T12:53:46 CEST" duration-ms="70663">
       <class name="com.ecommerce.qa.tests.CartPageTests">
-        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:29 CEST" name="readTestData" finished-at="2022-06-13T13:34:29 CEST" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:36 CEST" name="readTestData" finished-at="2022-06-18T12:52:36 CEST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTestData -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:29 CEST" name="setUp" finished-at="2022-06-13T13:34:34 CEST" duration-ms="4595" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:36 CEST" name="setUp" finished-at="2022-06-18T12:52:39 CEST" duration-ms="3426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="shouldShowAlertForEmptyCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:34 CEST" name="shouldShowAlertForEmptyCart" finished-at="2022-06-13T13:34:43 CEST" duration-ms="9162" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="shouldDecreaseProductQuantityInTheCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:39 CEST" name="shouldDecreaseProductQuantityInTheCart" description="Decrease the number of particular product in the cart" finished-at="2022-06-18T12:52:50 CEST" duration-ms="10525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDecreaseProductQuantityInTheCart -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:50 CEST" name="cleanUp" finished-at="2022-06-18T12:52:50 CEST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:50 CEST" name="setUp" finished-at="2022-06-18T12:52:51 CEST" duration-ms="1055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDeleteProductFromTheCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:52:51 CEST" name="shouldDeleteProductFromTheCart" description="Delete product from the cart" finished-at="2022-06-18T12:53:02 CEST" duration-ms="10902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteProductFromTheCart -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:02 CEST" name="cleanUp" finished-at="2022-06-18T12:53:02 CEST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:02 CEST" name="setUp" finished-at="2022-06-18T12:53:03 CEST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldIncreaseProductQuantityInTheCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:03 CEST" name="shouldIncreaseProductQuantityInTheCart" description="Increase the number of particular product in the cart" finished-at="2022-06-18T12:53:12 CEST" duration-ms="9148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldIncreaseProductQuantityInTheCart -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:12 CEST" name="cleanUp" finished-at="2022-06-18T12:53:13 CEST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:13 CEST" name="setUp" finished-at="2022-06-18T12:53:14 CEST" duration-ms="1128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldRedirectLoggedInUserToAddressPage()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:14 CEST" name="shouldRedirectLoggedInUserToAddressPage" description="Proceed to the next step from the cart as logged in user" finished-at="2022-06-18T12:53:29 CEST" duration-ms="15628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRedirectLoggedInUserToAddressPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:29 CEST" name="cleanUp" finished-at="2022-06-18T12:53:30 CEST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:30 CEST" name="setUp" finished-at="2022-06-18T12:53:31 CEST" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldRedirectNotLoggedInUserToLoginPage()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:31 CEST" name="shouldRedirectNotLoggedInUserToLoginPage" description="Proceed to the next step from the cart as not logged in user" finished-at="2022-06-18T12:53:40 CEST" duration-ms="9209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRedirectNotLoggedInUserToLoginPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:40 CEST" name="cleanUp" finished-at="2022-06-18T12:53:40 CEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:40 CEST" name="setUp" finished-at="2022-06-18T12:53:41 CEST" duration-ms="1043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldShowAlertForEmptyCart()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:41 CEST" name="shouldShowAlertForEmptyCart" description="Open cart as not logged in user" finished-at="2022-06-18T12:53:46 CEST" duration-ms="4997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldShowAlertForEmptyCart -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@3ee37e5a]" started-at="2022-06-18T12:53:46 CEST" name="cleanUp" finished-at="2022-06-18T12:53:46 CEST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.ecommerce.qa.tests.CartPageTests -->
+    </test> <!-- CartPageTests -->
+    <test started-at="2022-06-18T12:53:46 CEST" name="LoginPageTests" finished-at="2022-06-18T12:54:46 CEST" duration-ms="59538">
+      <class name="com.ecommerce.qa.tests.LoginPageTests">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:53:46 CEST" name="readTestData" finished-at="2022-06-18T12:53:46 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:53:47 CEST" name="setUp" finished-at="2022-06-18T12:53:49 CEST" duration-ms="2177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailLoggingIntoAccount(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:53:49 CEST" name="shouldFailLoggingIntoAccount" data-provider="failed_login_data" finished-at="2022-06-18T12:54:01 CEST" duration-ms="12698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mj5txtpmv]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[An email address required.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailLoggingIntoAccount -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:01 CEST" name="cleanUp" finished-at="2022-06-18T12:54:03 CEST" duration-ms="1087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:03 CEST" name="setUp" finished-at="2022-06-18T12:54:04 CEST" duration-ms="1424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailLoggingIntoAccount(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:04 CEST" name="shouldFailLoggingIntoAccount" data-provider="failed_login_data" finished-at="2022-06-18T12:54:13 CEST" duration-ms="8536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alaine.toy@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xuet7ii7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Authentication failed.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailLoggingIntoAccount -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:13 CEST" name="cleanUp" finished-at="2022-06-18T12:54:13 CEST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:13 CEST" name="setUp" finished-at="2022-06-18T12:54:15 CEST" duration-ms="1597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailLoggingIntoAccount(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:15 CEST" name="shouldFailLoggingIntoAccount" data-provider="failed_login_data" finished-at="2022-06-18T12:54:23 CEST" duration-ms="8043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alvina.boyle@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password is required.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailLoggingIntoAccount -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:23 CEST" name="cleanUp" finished-at="2022-06-18T12:54:24 CEST" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:24 CEST" name="setUp" finished-at="2022-06-18T12:54:27 CEST" duration-ms="3156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldLoginIntoAccount()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:27 CEST" name="shouldLoginIntoAccount" finished-at="2022-06-18T12:54:34 CEST" duration-ms="7182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldLoginIntoAccount -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:34 CEST" name="cleanUp" finished-at="2022-06-18T12:54:34 CEST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:34 CEST" name="setUp" finished-at="2022-06-18T12:54:38 CEST" duration-ms="3296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldRedirectToForgotPasswordPage()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:38 CEST" name="shouldRedirectToForgotPasswordPage" finished-at="2022-06-18T12:54:45 CEST" duration-ms="6827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRedirectToForgotPasswordPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.LoginPageTests@41a0aa7d]" started-at="2022-06-18T12:54:45 CEST" name="cleanUp" finished-at="2022-06-18T12:54:46 CEST" duration-ms="1306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.ecommerce.qa.tests.LoginPageTests -->
+    </test> <!-- LoginPageTests -->
+    <test started-at="2022-06-18T12:54:46 CEST" name="ContactPageTests" finished-at="2022-06-18T12:55:41 CEST" duration-ms="55186">
+      <class name="com.ecommerce.qa.tests.ContactPageTests">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:46 CEST" name="readTestData" finished-at="2022-06-18T12:54:46 CEST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:46 CEST" name="setUp" finished-at="2022-06-18T12:54:48 CEST" duration-ms="2302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldChangeSubjectDescription(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:48 CEST" name="shouldChangeSubjectDescription" data-provider="contact_form_data" finished-at="2022-06-18T12:54:55 CEST" duration-ms="6904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer service]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[For any question about a product, an order]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldChangeSubjectDescription -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:55 CEST" name="cleanUp" finished-at="2022-06-18T12:54:55 CEST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:55 CEST" name="setUp" finished-at="2022-06-18T12:54:57 CEST" duration-ms="1267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldChangeSubjectDescription(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:54:57 CEST" name="shouldChangeSubjectDescription" data-provider="contact_form_data" finished-at="2022-06-18T12:55:03 CEST" duration-ms="5903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Webmaster]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[If a technical problem occurs on this website]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldChangeSubjectDescription -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:03 CEST" name="cleanUp" finished-at="2022-06-18T12:55:03 CEST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:03 CEST" name="setUp" finished-at="2022-06-18T12:55:04 CEST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailToSubmitContactForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:04 CEST" name="shouldFailToSubmitContactForm" data-provider="fail_contact_form_data" finished-at="2022-06-18T12:55:10 CEST" duration-ms="6243" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer service]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[d0HRCYa4pq3tJWmVpGb4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[An email address required.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[expected [123] but found [Your shopping cart is empty.]]]>
+              <![CDATA[invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2fddbb0b83c16231f26d0c4446316124, sendKeysToElement {id=ee305c2a-f585-4871-9af4-83e659c00233, value=[Ljava.lang.CharSequence;@757f47f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (2fddbb0b83c16231f26d0c4446316124)] -> id: fileUpload]
+Session ID: 2fddbb0b83c16231f26d0c4446316124]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2fddbb0b83c16231f26d0c4446316124, sendKeysToElement {id=ee305c2a-f585-4871-9af4-83e659c00233, value=[Ljava.lang.CharSequence;@757f47f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (2fddbb0b83c16231f26d0c4446316124)] -> id: fileUpload]
+Session ID: 2fddbb0b83c16231f26d0c4446316124
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -41,20 +438,911 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldShowAlertForEmptyCart -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.CartPageTests@dc7b462]" started-at="2022-06-13T13:34:43 CEST" name="cleanUp" finished-at="2022-06-13T13:34:44 CEST" duration-ms="196" status="PASS">
+        </test-method> <!-- shouldFailToSubmitContactForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:10 CEST" name="cleanUp" finished-at="2022-06-18T12:55:10 CEST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- com.ecommerce.qa.tests.CartPageTests -->
-    </test> <!-- HomePage -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:10 CEST" name="setUp" finished-at="2022-06-18T12:55:12 CEST" duration-ms="1204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailToSubmitContactForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:12 CEST" name="shouldFailToSubmitContactForm" data-provider="fail_contact_form_data" finished-at="2022-06-18T12:55:17 CEST" duration-ms="5417" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Webmaster]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.github.javafaker.Number@45b2b0ed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yZ9P6h1CxTU512f5A0pQ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid email address.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1f2bcfc0243307e648c08f5618b8ab69, sendKeysToElement {id=e4366792-9989-4903-81cd-27b67fd2e923, value=[Ljava.lang.CharSequence;@4bba2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (1f2bcfc0243307e648c08f5618b8ab69)] -> id: fileUpload]
+Session ID: 1f2bcfc0243307e648c08f5618b8ab69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1f2bcfc0243307e648c08f5618b8ab69, sendKeysToElement {id=e4366792-9989-4903-81cd-27b67fd2e923, value=[Ljava.lang.CharSequence;@4bba2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (1f2bcfc0243307e648c08f5618b8ab69)] -> id: fileUpload]
+Session ID: 1f2bcfc0243307e648c08f5618b8ab69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailToSubmitContactForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:17 CEST" name="cleanUp" finished-at="2022-06-18T12:55:17 CEST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:17 CEST" name="setUp" finished-at="2022-06-18T12:55:18 CEST" duration-ms="1219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldFailToSubmitContactForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:18 CEST" name="shouldFailToSubmitContactForm" data-provider="fail_contact_form_data" finished-at="2022-06-18T12:55:24 CEST" duration-ms="5501" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer service]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[forest.borer@yahoo.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[The message cannot be blank.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ed45835c4694a71ddfba761d3a8afd81, sendKeysToElement {id=33e6ea03-d5e2-462e-8ab1-ab1c4705241b, value=[Ljava.lang.CharSequence;@1964ef9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (ed45835c4694a71ddfba761d3a8afd81)] -> id: fileUpload]
+Session ID: ed45835c4694a71ddfba761d3a8afd81]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ed45835c4694a71ddfba761d3a8afd81, sendKeysToElement {id=33e6ea03-d5e2-462e-8ab1-ab1c4705241b, value=[Ljava.lang.CharSequence;@1964ef9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (ed45835c4694a71ddfba761d3a8afd81)] -> id: fileUpload]
+Session ID: ed45835c4694a71ddfba761d3a8afd81
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailToSubmitContactForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:24 CEST" name="cleanUp" finished-at="2022-06-18T12:55:24 CEST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:24 CEST" name="setUp" finished-at="2022-06-18T12:55:25 CEST" duration-ms="1236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldSuccessfullySubmitContactUsForm(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:25 CEST" name="shouldSuccessfullySubmitContactUsForm" data-provider="contact_form_data_subjects" finished-at="2022-06-18T12:55:31 CEST" duration-ms="5467" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer service]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6b47e27d51fd44259349ac20e02084dd, sendKeysToElement {id=08462094-92df-4ff5-8a07-51dbc5ae5594, value=[Ljava.lang.CharSequence;@6af02de0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (6b47e27d51fd44259349ac20e02084dd)] -> id: fileUpload]
+Session ID: 6b47e27d51fd44259349ac20e02084dd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6b47e27d51fd44259349ac20e02084dd, sendKeysToElement {id=08462094-92df-4ff5-8a07-51dbc5ae5594, value=[Ljava.lang.CharSequence;@6af02de0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (6b47e27d51fd44259349ac20e02084dd)] -> id: fileUpload]
+Session ID: 6b47e27d51fd44259349ac20e02084dd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSuccessfullySubmitContactUsForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:31 CEST" name="cleanUp" finished-at="2022-06-18T12:55:31 CEST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:31 CEST" name="setUp" finished-at="2022-06-18T12:55:32 CEST" duration-ms="1127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldSuccessfullySubmitContactUsForm(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:32 CEST" name="shouldSuccessfullySubmitContactUsForm" data-provider="contact_form_data_subjects" finished-at="2022-06-18T12:55:41 CEST" duration-ms="8784" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Webmaster]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4acd7559f48355ad3e24cb1e43f65ddf, sendKeysToElement {id=f6ff55be-e3e6-498c-b057-df82b5159bb0, value=[Ljava.lang.CharSequence;@624268ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (4acd7559f48355ad3e24cb1e43f65ddf)] -> id: fileUpload]
+Session ID: 4acd7559f48355ad3e24cb1e43f65ddf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-TQTAUTU', ip: '192.168.8.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4acd7559f48355ad3e24cb1e43f65ddf, sendKeysToElement {id=f6ff55be-e3e6-498c-b057-df82b5159bb0, value=[Ljava.lang.CharSequence;@624268ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (4acd7559f48355ad3e24cb1e43f65ddf)] -> id: fileUpload]
+Session ID: 4acd7559f48355ad3e24cb1e43f65ddf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSuccessfullySubmitContactUsForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ContactPageTests@1c7696c6]" started-at="2022-06-18T12:55:41 CEST" name="cleanUp" finished-at="2022-06-18T12:55:41 CEST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.ecommerce.qa.tests.ContactPageTests -->
+    </test> <!-- ContactPageTests -->
+    <test started-at="2022-06-18T12:55:41 CEST" name="ForgetPasswordPageTests" finished-at="2022-06-18T12:56:49 CEST" duration-ms="68331">
+      <class name="com.ecommerce.qa.tests.ForgetPasswordPageTests">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:41 CEST" name="readTestData" finished-at="2022-06-18T12:55:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:41 CEST" name="setUp" finished-at="2022-06-18T12:55:43 CEST" duration-ms="1445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="goBackToLoginPage()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:43 CEST" name="goBackToLoginPage" finished-at="2022-06-18T12:55:54 CEST" duration-ms="11337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToLoginPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:54 CEST" name="cleanUp" finished-at="2022-06-18T12:55:54 CEST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:54 CEST" name="setUp" finished-at="2022-06-18T12:55:57 CEST" duration-ms="2571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="goBackToLoginPageByBreadCrumbButton()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:55:57 CEST" name="goBackToLoginPageByBreadCrumbButton" finished-at="2022-06-18T12:56:08 CEST" duration-ms="11370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBackToLoginPageByBreadCrumbButton -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:08 CEST" name="cleanUp" finished-at="2022-06-18T12:56:09 CEST" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:09 CEST" name="setUp" finished-at="2022-06-18T12:56:12 CEST" duration-ms="2383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="submitForgotPasswordForm(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:12 CEST" name="submitForgotPasswordForm" data-provider="forgot_password_data" finished-at="2022-06-18T12:56:20 CEST" duration-ms="8838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[irvin.stamm@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[There is no account registered for this email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForgotPasswordForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:20 CEST" name="cleanUp" finished-at="2022-06-18T12:56:21 CEST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:21 CEST" name="setUp" finished-at="2022-06-18T12:56:23 CEST" duration-ms="2414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="submitForgotPasswordForm(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:23 CEST" name="submitForgotPasswordForm" data-provider="forgot_password_data" finished-at="2022-06-18T12:56:33 CEST" duration-ms="10123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.github.javafaker.Name@38e100ab]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForgotPasswordForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:33 CEST" name="cleanUp" finished-at="2022-06-18T12:56:34 CEST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:34 CEST" name="setUp" finished-at="2022-06-18T12:56:37 CEST" duration-ms="2719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="submitForgotPasswordForm(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:37 CEST" name="submitForgotPasswordForm" data-provider="forgot_password_data" finished-at="2022-06-18T12:56:48 CEST" duration-ms="11652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maxim3093@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A confirmation email has been sent to your address: maxim3093@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForgotPasswordForm -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.ForgetPasswordPageTests@71ba6d4e]" started-at="2022-06-18T12:56:48 CEST" name="cleanUp" finished-at="2022-06-18T12:56:49 CEST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.ecommerce.qa.tests.ForgetPasswordPageTests -->
+    </test> <!-- ForgetPasswordPageTests -->
+    <test started-at="2022-06-18T12:56:49 CEST" name="HomePageTests" finished-at="2022-06-18T12:58:35 CEST" duration-ms="105537">
+      <class name="com.ecommerce.qa.tests.HomePageTests">
+        <test-method is-config="true" signature="readTestData()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:56:49 CEST" name="readTestData" finished-at="2022-06-18T12:56:49 CEST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:56:49 CEST" name="setUp" finished-at="2022-06-18T12:56:52 CEST" duration-ms="2534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldAddProductToCartFromHomePage()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:56:52 CEST" name="shouldAddProductToCartFromHomePage" finished-at="2022-06-18T12:57:08 CEST" duration-ms="15569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddProductToCartFromHomePage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:08 CEST" name="cleanUp" finished-at="2022-06-18T12:57:08 CEST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:08 CEST" name="setUp" finished-at="2022-06-18T12:57:10 CEST" duration-ms="2396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDisplayAllTheContentInsideCategoryDropdownMenu(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:10 CEST" name="shouldDisplayAllTheContentInsideCategoryDropdownMenu" data-provider="homepage_product_categories" finished-at="2022-06-18T12:57:15 CEST" duration-ms="4950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Women]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayAllTheContentInsideCategoryDropdownMenu -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:15 CEST" name="cleanUp" finished-at="2022-06-18T12:57:16 CEST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:16 CEST" name="setUp" finished-at="2022-06-18T12:57:17 CEST" duration-ms="981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDisplayAllTheContentInsideCategoryDropdownMenu(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:17 CEST" name="shouldDisplayAllTheContentInsideCategoryDropdownMenu" data-provider="homepage_product_categories" finished-at="2022-06-18T12:57:21 CEST" duration-ms="4775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dresses]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayAllTheContentInsideCategoryDropdownMenu -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:21 CEST" name="cleanUp" finished-at="2022-06-18T12:57:22 CEST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:22 CEST" name="setUp" finished-at="2022-06-18T12:57:23 CEST" duration-ms="1210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDisplayHomeContentImages()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:23 CEST" name="shouldDisplayHomeContentImages" finished-at="2022-06-18T12:57:27 CEST" duration-ms="4683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayHomeContentImages -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:27 CEST" name="cleanUp" finished-at="2022-06-18T12:57:28 CEST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:28 CEST" name="setUp" finished-at="2022-06-18T12:57:29 CEST" duration-ms="979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDisplayHomePageLogo()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:29 CEST" name="shouldDisplayHomePageLogo" finished-at="2022-06-18T12:57:33 CEST" duration-ms="4282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayHomePageLogo -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:33 CEST" name="cleanUp" finished-at="2022-06-18T12:57:33 CEST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:33 CEST" name="setUp" finished-at="2022-06-18T12:57:36 CEST" duration-ms="2380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldDisplayProductReviewPopUpWindow()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:36 CEST" name="shouldDisplayProductReviewPopUpWindow" finished-at="2022-06-18T12:57:44 CEST" duration-ms="8799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayProductReviewPopUpWindow -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:44 CEST" name="cleanUp" finished-at="2022-06-18T12:57:45 CEST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:45 CEST" name="setUp" finished-at="2022-06-18T12:57:47 CEST" duration-ms="2431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldRedirectToContactUsPage()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:47 CEST" name="shouldRedirectToContactUsPage" finished-at="2022-06-18T12:57:56 CEST" duration-ms="8436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRedirectToContactUsPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:56 CEST" name="cleanUp" finished-at="2022-06-18T12:57:56 CEST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:56 CEST" name="setUp" finished-at="2022-06-18T12:57:57 CEST" duration-ms="1194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldRedirectToProductPage()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:57:57 CEST" name="shouldRedirectToProductPage" finished-at="2022-06-18T12:58:06 CEST" duration-ms="9358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRedirectToProductPage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:06 CEST" name="cleanUp" finished-at="2022-06-18T12:58:07 CEST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:07 CEST" name="setUp" finished-at="2022-06-18T12:58:08 CEST" duration-ms="1192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:08 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-06-18T12:58:18 CEST" duration-ms="9938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[page.carroll@hotmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Newsletter : You have successfully subscribed to this newsletter.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:18 CEST" name="cleanUp" finished-at="2022-06-18T12:58:18 CEST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:18 CEST" name="setUp" finished-at="2022-06-18T12:58:20 CEST" duration-ms="2030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:20 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-06-18T12:58:27 CEST" duration-ms="7342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.github.javafaker.Name@38e100ab]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Newsletter : Invalid email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:27 CEST" name="cleanUp" finished-at="2022-06-18T12:58:27 CEST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:27 CEST" name="setUp" finished-at="2022-06-18T12:58:29 CEST" duration-ms="1224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shouldReturnCorrectNewsletterAlertMessage(java.lang.String,java.lang.String)[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:29 CEST" name="shouldReturnCorrectNewsletterAlertMessage" data-provider="newsletter_data" finished-at="2022-06-18T12:58:35 CEST" duration-ms="6098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maxim3093@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Newsletter : This email address is already registered.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldReturnCorrectNewsletterAlertMessage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ecommerce.qa.tests.HomePageTests@298a5e20]" started-at="2022-06-18T12:58:35 CEST" name="cleanUp" finished-at="2022-06-18T12:58:35 CEST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.ecommerce.qa.tests.HomePageTests -->
+    </test> <!-- HomePageTests -->
   </suite> <!-- All Test Suite -->
 </testng-results>

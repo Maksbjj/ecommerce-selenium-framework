@@ -65,10 +65,6 @@ t
 Dsrc/main/java/com/ecommerce/qa/pageobjects/popup/AddToCartPopup.java,9\b\9b5d186021d1982969d0378e0cc8acaef30d756b
 f
 6src/main/java/com/ecommerce/qa/base/DriverContext.java,a\d\adb3cd16fb3dbe6883844a447cdba85b37083cab
-a
-1src/main/java/com/ecommerce/qa/base/BasePage.java,a\9\a9692fad5a306466279f9edbbe47df009a02b7e7
-b
-2src/test/java/com/ecommerce/qa/tests/BaseTest.java,f\c\fc60de5070529a5e85a39910ae23c46bbddfae96
 k
 ;src/main/java/com/ecommerce/qa/pageobjects/AccountPage.java,0\2\02700854b33f7224ea906e1b71dd33e7d35f92ff
 r

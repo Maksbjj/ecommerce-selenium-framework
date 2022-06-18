@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" parallel="methods" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="10" parallel="methods" name="HomePage(failed)" verbose="0">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="ContactPageTests(failed)" verbose="0">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.ecommerce.qa.tests.CartPageTests">
+      <class name="com.ecommerce.qa.tests.ContactPageTests">
         <methods>
+          <include name="shouldSuccessfullySubmitContactUsForm" invocation-numbers="0 1"/>
+          <include name="shouldFailToSubmitContactForm" invocation-numbers="0 1 2"/>
           <include name="cleanUp"/>
           <include name="setUp"/>
           <include name="readTestData"/>
-          <include name="shouldShowAlertForEmptyCart"/>
         </methods>
-      </class> <!-- com.ecommerce.qa.tests.CartPageTests -->
+      </class> <!-- com.ecommerce.qa.tests.ContactPageTests -->
     </classes>
-  </test> <!-- HomePage(failed) -->
+  </test> <!-- ContactPageTests(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

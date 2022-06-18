@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="TestSuite" time="9.336" errors="0" skipped="0">
+<testsuite tests="34" failures="5" name="TestSuite" time="285.375" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
@@ -61,325 +61,250 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldShowAlertForEmptyCart" time="9.336">
-    <failure message="expected [123] but found [Your shopping cart is empty.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldDecreaseProductQuantityInTheCart" time="10.49"/>
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldDeleteProductFromTheCart" time="10.9"/>
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldIncreaseProductQuantityInTheCart" time="9.145"/>
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldRedirectLoggedInUserToAddressPage" time="15.626"/>
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldRedirectNotLoggedInUserToLoginPage" time="9.207"/>
+  <testcase classname="com.ecommerce.qa.tests.CartPageTests" name="shouldShowAlertForEmptyCart" time="4.995"/>
+  <testcase classname="com.ecommerce.qa.tests.LoginPageTests" name="shouldFailLoggingIntoAccount" time="12.7"/>
+  <testcase classname="com.ecommerce.qa.tests.LoginPageTests" name="shouldFailLoggingIntoAccount" time="8.531"/>
+  <testcase classname="com.ecommerce.qa.tests.LoginPageTests" name="shouldFailLoggingIntoAccount" time="8.041"/>
+  <testcase classname="com.ecommerce.qa.tests.LoginPageTests" name="shouldLoginIntoAccount" time="7.174"/>
+  <testcase classname="com.ecommerce.qa.tests.LoginPageTests" name="shouldRedirectToForgotPasswordPage" time="6.823"/>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldChangeSubjectDescription" time="6.901"/>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldChangeSubjectDescription" time="5.902"/>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldFailToSubmitContactForm" time="6.251">
+    <failure message="invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2fddbb0b83c16231f26d0c4446316124, sendKeysToElement {id=ee305c2a-f585-4871-9af4-83e659c00233, value=[Ljava.lang.CharSequence;@757f47f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (2fddbb0b83c16231f26d0c4446316124)] -&gt; id: fileUpload]
+Session ID: 2fddbb0b83c16231f26d0c4446316124" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2fddbb0b83c16231f26d0c4446316124, sendKeysToElement {id=ee305c2a-f585-4871-9af4-83e659c00233, value=[Ljava.lang.CharSequence;@757f47f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (2fddbb0b83c16231f26d0c4446316124)] -&gt; id: fileUpload]
+Session ID: 2fddbb0b83c16231f26d0c4446316124
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
 </failure>
-    <system-out>13:34:30.379 [TestNG-test=HomePage-1] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=102 in cache (valid until 13:45:57 13/06/2022 CEST)
-13:34:30.390 [TestNG-test=HomePage-1] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome102=102.0.5005.61 in cache (valid until 11:25:10 14/06/2022 CEST)
-13:34:30.392 [TestNG-test=HomePage-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-13:34:30.419 [TestNG-test=HomePage-1] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 102.0.5005.61 found in cache
-13:34:30.421 [TestNG-test=HomePage-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\maxim\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-13:34:30.883 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
-13:34:30.892 [TestNG-test=HomePage-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-13:34:30.892 [TestNG-test=HomePage-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-13:34:30.903 [TestNG-test=HomePage-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@58b8caad
-13:34:30.972 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
-13:34:30.972 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
-13:34:30.976 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-13:34:30.977 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-13:34:30.979 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
-13:34:30.981 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-13:34:30.983 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-13:34:30.986 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @61baa894
-13:34:30.988 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.&lt;init&gt;(long, int): unavailable
-13:34:30.988 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
-13:34:31.004 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4269801472 bytes (maybe)
-13:34:31.004 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\maxim\AppData\Local\Temp (java.io.tmpdir)
-13:34:31.005 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-13:34:31.005 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
-13:34:31.007 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-13:34:31.007 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-13:34:31.010 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-13:34:31.010 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
-13:34:31.046 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-13:34:31.110 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-13:34:31.110 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-13:34:31.215 [TestNG-test=HomePage-1] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-13:34:31.215 [TestNG-test=HomePage-1] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-13:34:31.316 [TestNG-test=HomePage-1] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-13:34:31.349 [TestNG-test=HomePage-1] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-13:34:31.349 [TestNG-test=HomePage-1] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-13:34:31.480 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-13:34:31.480 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-13:34:31.480 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-13:34:31.480 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-13:34:31.481 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-13:34:31.516 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
-13:34:31.516 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-13:34:31.516 [TestNG-test=HomePage-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-13:34:32.554 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 9144 (auto-detected)
-13:34:32.560 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
-13:34:32.560 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
-13:34:32.574 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-13:34:32.576 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-13:34:32.617 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: c0:14:3d:ff:fe:d5:80:6b (auto-detected)
-13:34:32.753 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-13:34:32.753 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-13:34:32.753 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7e0a5e09
-13:34:32.781 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;/session&apos;
-13:34:32.821 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-13:34:32.821 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
-13:34:32.821 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
-13:34:32.821 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
-13:34:33.496 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-13:34:33.496 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 365
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 789
-
-13:34:33.509 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:33.841 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel &apos;[id: 0xaefe5418, L:/127.0.0.1:58723 - R:localhost/127.0.0.1:58716]&apos; for &apos;GET&apos; to &apos;/json/version&apos;
-13:34:33.845 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /json/version HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-host: localhost:58716
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=UTF-8
-content-length: 428
-
-13:34:33.845 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:58716 for channel [id: 0xaefe5418, L:/127.0.0.1:58723 - R:localhost/127.0.0.1:58716]
-13:34:33.876 [TestNG-test=HomePage-1] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x20ecbdd87e804d69
-13:34:33.885 [AsyncHttpClient-1-4] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel &apos;[id: 0xc50cb631, L:/127.0.0.1:58724 - R:localhost/127.0.0.1:58716]&apos; for &apos;GET&apos; to &apos;/devtools/browser/ebe91f43-3b79-4f53-8db9-e00a16dff71a&apos;
-13:34:33.890 [AsyncHttpClient-1-4] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /devtools/browser/ebe91f43-3b79-4f53-8db9-e00a16dff71a HTTP/1.1
-upgrade: websocket
-connection: upgrade
-sec-websocket-key: s25jdvjyTe3HUex8Sw1PqQ==
-sec-websocket-version: 13
-origin: http://localhost:58716
-host: localhost:58716
-accept: */*
-user-agent: AHC/2.1
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 101 WebSocket Protocol Handshake
-Upgrade: WebSocket
-Connection: Upgrade
-Sec-WebSocket-Accept: tidD3GEvh86Bnk8aEIlqBA4rbck=
-
-13:34:34.071 [Forwarding deleteAllCookies on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;DELETE&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/cookie&apos;
-13:34:34.071 [Forwarding deleteAllCookies on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for DELETE &apos;/session/9c9449f5fa728865474ec647c4dbd886/cookie&apos;
-13:34:34.100 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-DELETE /session/9c9449f5fa728865474ec647c4dbd886/cookie HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-13:34:34.101 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:34.118 [Forwarding maximizeCurrentWindow on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/window/maximize&apos;
-13:34:34.118 [Forwarding maximizeCurrentWindow on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/window/maximize&apos;
-13:34:34.278 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/window/maximize HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 3
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 51
-
-13:34:34.278 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:34.284 [Forwarding setTimeout on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/timeouts&apos;
-13:34:34.285 [Forwarding setTimeout on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/timeouts&apos;
-13:34:34.287 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/timeouts HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 22
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-13:34:34.287 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:34.463 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:34.464 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:52307 : 1
-13:34:34.660 [Forwarding get on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/url&apos;
-13:34:34.660 [Forwarding get on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/url&apos;
-13:34:35.559 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:36.660 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:37.760 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:38.859 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:39.960 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:41.060 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:42.139 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/url HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 69
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-13:34:42.139 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:42.144 [Forwarding findElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/element&apos;
-13:34:42.144 [Forwarding findElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/element&apos;
-13:34:42.157 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/element HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 72
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 88
-
-13:34:42.158 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:42.162 [Forwarding clickElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/element/8da16e91-cd25-42fe-acca-6051d5acc508/click&apos;
-13:34:42.162 [Forwarding clickElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/element/8da16e91-cd25-42fe-acca-6051d5acc508/click&apos;
-13:34:42.165 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:43.260 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:58716 : 1
-13:34:43.617 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/element/8da16e91-cd25-42fe-acca-6051d5acc508/click HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 50
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-13:34:43.617 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:43.625 [Forwarding findElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;POST&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/element&apos;
-13:34:43.625 [Forwarding findElement on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for POST &apos;/session/9c9449f5fa728865474ec647c4dbd886/element&apos;
-13:34:43.639 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/9c9449f5fa728865474ec647c4dbd886/element HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Content-Length: 50
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 88
-
-13:34:43.640 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:43.642 [Forwarding getElementText on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;GET&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/element/800db0b8-4d71-4ad2-a16a-1cc64675fe81/text&apos;
-13:34:43.642 [Forwarding getElementText on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for GET &apos;/session/9c9449f5fa728865474ec647c4dbd886/element/800db0b8-4d71-4ad2-a16a-1cc64675fe81/text&apos;
-13:34:43.658 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /session/9c9449f5fa728865474ec647c4dbd886/element/800db0b8-4d71-4ad2-a16a-1cc64675fe81/text HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Cache-Control: no-cache
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 40
-
-13:34:43.659 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-13:34:43.671 [Forwarding screenshot on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel &apos;[id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]&apos; for &apos;GET&apos; to &apos;http://localhost:52307/session/9c9449f5fa728865474ec647c4dbd886/screenshot&apos;
-13:34:43.671 [Forwarding screenshot on session 9c9449f5fa728865474ec647c4dbd886 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307] for GET &apos;/session/9c9449f5fa728865474ec647c4dbd886/screenshot&apos;
-13:34:43.857 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /session/9c9449f5fa728865474ec647c4dbd886/screenshot HTTP/1.1
-User-Agent: selenium/4.1.4 (java windows)
-Cache-Control: no-cache
-Content-Type: application/json; charset=utf-8
-host: localhost:52307
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 142004
-
-13:34:43.860 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:52307 for channel [id: 0x63c6ab31, L:/127.0.0.1:58714 - R:localhost/127.0.0.1:52307]
-</system-out>
-    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52307
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 13, 2022 1:34:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Jun 13, 2022 1:34:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
-Jun 13, 2022 1:34:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 102 of 101
+    <system-err>Jun 18, 2022 12:55:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
 </system-err>
   </testcase>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldFailToSubmitContactForm" time="5.418">
+    <failure message="invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1f2bcfc0243307e648c08f5618b8ab69, sendKeysToElement {id=e4366792-9989-4903-81cd-27b67fd2e923, value=[Ljava.lang.CharSequence;@4bba2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (1f2bcfc0243307e648c08f5618b8ab69)] -&gt; id: fileUpload]
+Session ID: 1f2bcfc0243307e648c08f5618b8ab69" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1f2bcfc0243307e648c08f5618b8ab69, sendKeysToElement {id=e4366792-9989-4903-81cd-27b67fd2e923, value=[Ljava.lang.CharSequence;@4bba2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (1f2bcfc0243307e648c08f5618b8ab69)] -&gt; id: fileUpload]
+Session ID: 1f2bcfc0243307e648c08f5618b8ab69
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+</failure>
+    <system-err>Jun 18, 2022 12:55:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldFailToSubmitContactForm" time="5.507">
+    <failure message="invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ed45835c4694a71ddfba761d3a8afd81, sendKeysToElement {id=33e6ea03-d5e2-462e-8ab1-ab1c4705241b, value=[Ljava.lang.CharSequence;@1964ef9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (ed45835c4694a71ddfba761d3a8afd81)] -&gt; id: fileUpload]
+Session ID: ed45835c4694a71ddfba761d3a8afd81" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ed45835c4694a71ddfba761d3a8afd81, sendKeysToElement {id=33e6ea03-d5e2-462e-8ab1-ab1c4705241b, value=[Ljava.lang.CharSequence;@1964ef9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (ed45835c4694a71ddfba761d3a8afd81)] -&gt; id: fileUpload]
+Session ID: ed45835c4694a71ddfba761d3a8afd81
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+</failure>
+    <system-err>Jun 18, 2022 12:55:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldSuccessfullySubmitContactUsForm" time="5.469">
+    <failure message="invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6b47e27d51fd44259349ac20e02084dd, sendKeysToElement {id=08462094-92df-4ff5-8a07-51dbc5ae5594, value=[Ljava.lang.CharSequence;@6af02de0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (6b47e27d51fd44259349ac20e02084dd)] -&gt; id: fileUpload]
+Session ID: 6b47e27d51fd44259349ac20e02084dd" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6b47e27d51fd44259349ac20e02084dd, sendKeysToElement {id=08462094-92df-4ff5-8a07-51dbc5ae5594, value=[Ljava.lang.CharSequence;@6af02de0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (6b47e27d51fd44259349ac20e02084dd)] -&gt; id: fileUpload]
+Session ID: 6b47e27d51fd44259349ac20e02084dd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+</failure>
+    <system-err>Jun 18, 2022 12:55:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.ecommerce.qa.tests.ContactPageTests" name="shouldSuccessfullySubmitContactUsForm" time="8.785">
+    <failure message="invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4acd7559f48355ad3e24cb1e43f65ddf, sendKeysToElement {id=f6ff55be-e3e6-498c-b057-df82b5159bb0, value=[Ljava.lang.CharSequence;@624268ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (4acd7559f48355ad3e24cb1e43f65ddf)] -&gt; id: fileUpload]
+Session ID: 4acd7559f48355ad3e24cb1e43f65ddf" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqa&amp;#12;ilescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4acd7559f48355ad3e24cb1e43f65ddf, sendKeysToElement {id=f6ff55be-e3e6-498c-b057-df82b5159bb0, value=[Ljava.lang.CharSequence;@624268ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (4acd7559f48355ad3e24cb1e43f65ddf)] -&gt; id: fileUpload]
+Session ID: 4acd7559f48355ad3e24cb1e43f65ddf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+</failure>
+    <system-err>Jun 18, 2022 12:55:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.ecommerce.qa.tests.ForgetPasswordPageTests" name="goBackToLoginPage" time="11.339"/>
+  <testcase classname="com.ecommerce.qa.tests.ForgetPasswordPageTests" name="goBackToLoginPageByBreadCrumbButton" time="11.37"/>
+  <testcase classname="com.ecommerce.qa.tests.ForgetPasswordPageTests" name="submitForgotPasswordForm" time="8.837"/>
+  <testcase classname="com.ecommerce.qa.tests.ForgetPasswordPageTests" name="submitForgotPasswordForm" time="10.12"/>
+  <testcase classname="com.ecommerce.qa.tests.ForgetPasswordPageTests" name="submitForgotPasswordForm" time="11.649"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldAddProductToCartFromHomePage" time="15.569"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldDisplayAllTheContentInsideCategoryDropdownMenu" time="4.945"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldDisplayAllTheContentInsideCategoryDropdownMenu" time="4.774"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldDisplayHomeContentImages" time="4.68"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldDisplayHomePageLogo" time="4.282"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldDisplayProductReviewPopUpWindow" time="8.793"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldRedirectToContactUsPage" time="8.432"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldRedirectToProductPage" time="9.354"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldReturnCorrectNewsletterAlertMessage" time="9.934"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldReturnCorrectNewsletterAlertMessage" time="7.338"/>
+  <testcase classname="com.ecommerce.qa.tests.HomePageTests" name="shouldReturnCorrectNewsletterAlertMessage" time="6.094"/>
 </testsuite>

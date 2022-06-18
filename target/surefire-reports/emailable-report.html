@@ -9,15 +9,162 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">All Test Suite</th></tr>
-<tr><td><a href="#t0">HomePage</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,988</td><td></td><td></td></tr>
+<tr><td><a href="#t0">CartPageTests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">70,663</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LoginPageTests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">59,538</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ContactPageTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">55,186</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">ForgetPasswordPageTests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">68,331</td><td></td><td></td></tr>
+<tr><td><a href="#t4">HomePageTests</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">105,537</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">29</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">359,255</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomePage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ecommerce.qa.tests.CartPageTests</td><td><a href="#m0">shouldShowAlertForEmptyCart</a></td><td rowspan="1">1655120074504</td><td rowspan="1">9162</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CartPageTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.ecommerce.qa.tests.CartPageTests</td><td><a href="#m0">shouldDecreaseProductQuantityInTheCart</a></td><td rowspan="1">1655549559846</td><td rowspan="1">10525</td></tr><tr class="passedeven"><td><a href="#m1">shouldDeleteProductFromTheCart</a></td><td rowspan="1">1655549571648</td><td rowspan="1">10902</td></tr><tr class="passedeven"><td><a href="#m2">shouldIncreaseProductQuantityInTheCart</a></td><td rowspan="1">1655549583826</td><td rowspan="1">9148</td></tr><tr class="passedeven"><td><a href="#m3">shouldRedirectLoggedInUserToAddressPage</a></td><td rowspan="1">1655549594291</td><td rowspan="1">15628</td></tr><tr class="passedeven"><td><a href="#m4">shouldRedirectNotLoggedInUserToLoginPage</a></td><td rowspan="1">1655549611187</td><td rowspan="1">9209</td></tr><tr class="passedeven"><td><a href="#m5">shouldShowAlertForEmptyCart</a></td><td rowspan="1">1655549621635</td><td rowspan="1">4997</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LoginPageTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.ecommerce.qa.tests.LoginPageTests</td><td><a href="#m6">shouldFailLoggingIntoAccount</a></td><td rowspan="3">1655549644511</td><td rowspan="3">8536</td></tr><tr class="passedeven"><td><a href="#m7">shouldFailLoggingIntoAccount</a></td></tr><tr class="passedeven"><td><a href="#m8">shouldFailLoggingIntoAccount</a></td></tr><tr class="passedeven"><td><a href="#m9">shouldLoginIntoAccount</a></td><td rowspan="1">1655549667314</td><td rowspan="1">7182</td></tr><tr class="passedeven"><td><a href="#m10">shouldRedirectToForgotPasswordPage</a></td><td rowspan="1">1655549678241</td><td rowspan="1">6827</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ContactPageTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">com.ecommerce.qa.tests.ContactPageTests</td><td><a href="#m11">shouldFailToSubmitContactForm</a></td><td rowspan="3">1655549704404</td><td rowspan="3">6243</td></tr><tr class="failedeven"><td><a href="#m12">shouldFailToSubmitContactForm</a></td></tr><tr class="failedeven"><td><a href="#m13">shouldFailToSubmitContactForm</a></td></tr><tr class="failedeven"><td><a href="#m14">shouldSuccessfullySubmitContactUsForm</a></td><td rowspan="2">1655549725873</td><td rowspan="2">5467</td></tr><tr class="failedeven"><td><a href="#m15">shouldSuccessfullySubmitContactUsForm</a></td></tr><tr><th colspan="4">ContactPageTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.ecommerce.qa.tests.ContactPageTests</td><td><a href="#m16">shouldChangeSubjectDescription</a></td><td rowspan="2">1655549688715</td><td rowspan="2">6904</td></tr><tr class="passedeven"><td><a href="#m17">shouldChangeSubjectDescription</a></td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">ForgetPasswordPageTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.ecommerce.qa.tests.ForgetPasswordPageTests</td><td><a href="#m18">goBackToLoginPage</a></td><td rowspan="1">1655549743067</td><td rowspan="1">11337</td></tr><tr class="passedeven"><td><a href="#m19">goBackToLoginPageByBreadCrumbButton</a></td><td rowspan="1">1655549757447</td><td rowspan="1">11370</td></tr><tr class="passedeven"><td><a href="#m20">submitForgotPasswordForm</a></td><td rowspan="3">1655549772071</td><td rowspan="3">8838</td></tr><tr class="passedeven"><td><a href="#m21">submitForgotPasswordForm</a></td></tr><tr class="passedeven"><td><a href="#m22">submitForgotPasswordForm</a></td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">HomePageTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">com.ecommerce.qa.tests.HomePageTests</td><td><a href="#m23">shouldAddProductToCartFromHomePage</a></td><td rowspan="1">1655549812505</td><td rowspan="1">15569</td></tr><tr class="passedeven"><td><a href="#m24">shouldDisplayAllTheContentInsideCategoryDropdownMenu</a></td><td rowspan="2">1655549837038</td><td rowspan="2">4775</td></tr><tr class="passedeven"><td><a href="#m25">shouldDisplayAllTheContentInsideCategoryDropdownMenu</a></td></tr><tr class="passedeven"><td><a href="#m26">shouldDisplayHomeContentImages</a></td><td rowspan="1">1655549843224</td><td rowspan="1">4683</td></tr><tr class="passedeven"><td><a href="#m27">shouldDisplayHomePageLogo</a></td><td rowspan="1">1655549849083</td><td rowspan="1">4282</td></tr><tr class="passedeven"><td><a href="#m28">shouldDisplayProductReviewPopUpWindow</a></td><td rowspan="1">1655549856071</td><td rowspan="1">8799</td></tr><tr class="passedeven"><td><a href="#m29">shouldRedirectToContactUsPage</a></td><td rowspan="1">1655549867647</td><td rowspan="1">8436</td></tr><tr class="passedeven"><td><a href="#m30">shouldRedirectToProductPage</a></td><td rowspan="1">1655549877470</td><td rowspan="1">9358</td></tr><tr class="passedeven"><td><a href="#m31">shouldReturnCorrectNewsletterAlertMessage</a></td><td rowspan="3">1655549900450</td><td rowspan="3">7342</td></tr><tr class="passedeven"><td><a href="#m32">shouldReturnCorrectNewsletterAlertMessage</a></td></tr><tr class="passedeven"><td><a href="#m33">shouldReturnCorrectNewsletterAlertMessage</a></td></tr></tbody>
 </table>
-<h2>HomePage</h2><h3 id="m0">com.ecommerce.qa.tests.CartPageTests#shouldShowAlertForEmptyCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [123] but found [Your shopping cart is empty.]
-	at com.ecommerce.qa.tests.CartPageTests.shouldShowAlertForEmptyCart(CartPageTests.java:28)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CartPageTests</h2><h3 id="m0">com.ecommerce.qa.tests.CartPageTests#shouldDecreaseProductQuantityInTheCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ecommerce.qa.tests.CartPageTests#shouldDeleteProductFromTheCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ecommerce.qa.tests.CartPageTests#shouldIncreaseProductQuantityInTheCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ecommerce.qa.tests.CartPageTests#shouldRedirectLoggedInUserToAddressPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ecommerce.qa.tests.CartPageTests#shouldRedirectNotLoggedInUserToLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ecommerce.qa.tests.CartPageTests#shouldShowAlertForEmptyCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginPageTests</h2><h3 id="m6">com.ecommerce.qa.tests.LoginPageTests#shouldFailLoggingIntoAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alaine.toy@yahoo.com</td><td>xuet7ii7</td><td>Authentication failed.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ecommerce.qa.tests.LoginPageTests#shouldFailLoggingIntoAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td></td><td>mj5txtpmv</td><td>An email address required.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ecommerce.qa.tests.LoginPageTests#shouldFailLoggingIntoAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alvina.boyle@gmail.com</td><td></td><td>Password is required.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ecommerce.qa.tests.LoginPageTests#shouldLoginIntoAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.ecommerce.qa.tests.LoginPageTests#shouldRedirectToForgotPasswordPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ContactPageTests</h2><h3 id="m11">com.ecommerce.qa.tests.ContactPageTests#shouldFailToSubmitContactForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Customer service</td><td></td><td>d0HRCYa4pq3tJWmVpGb4</td><td>An email address required.</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2fddbb0b83c16231f26d0c4446316124, sendKeysToElement {id=ee305c2a-f585-4871-9af4-83e659c00233, value=[Ljava.lang.CharSequence;@757f47f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (2fddbb0b83c16231f26d0c4446316124)] -&gt; id: fileUpload]
+Session ID: 2fddbb0b83c16231f26d0c4446316124
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.ecommerce.qa.tests.ContactPageTests#shouldFailToSubmitContactForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Customer service</td><td>forest.borer@yahoo.com</td><td></td><td>The message cannot be blank.</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ed45835c4694a71ddfba761d3a8afd81, sendKeysToElement {id=33e6ea03-d5e2-462e-8ab1-ab1c4705241b, value=[Ljava.lang.CharSequence;@1964ef9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (ed45835c4694a71ddfba761d3a8afd81)] -&gt; id: fileUpload]
+Session ID: ed45835c4694a71ddfba761d3a8afd81
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 44 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.ecommerce.qa.tests.ContactPageTests#shouldFailToSubmitContactForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Webmaster</td><td>com.github.javafaker.Number@45b2b0ed</td><td>yZ9P6h1CxTU512f5A0pQ</td><td>Invalid email address.</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1f2bcfc0243307e648c08f5618b8ab69, sendKeysToElement {id=e4366792-9989-4903-81cd-27b67fd2e923, value=[Ljava.lang.CharSequence;@4bba2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (1f2bcfc0243307e648c08f5618b8ab69)] -&gt; id: fileUpload]
+Session ID: 1f2bcfc0243307e648c08f5618b8ab69
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldFailToSubmitContactForm(ContactPageTests.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.ecommerce.qa.tests.ContactPageTests#shouldSuccessfullySubmitContactUsForm</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Customer service</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6b47e27d51fd44259349ac20e02084dd, sendKeysToElement {id=08462094-92df-4ff5-8a07-51dbc5ae5594, value=[Ljava.lang.CharSequence;@6af02de0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (6b47e27d51fd44259349ac20e02084dd)] -&gt; id: fileUpload]
+Session ID: 6b47e27d51fd44259349ac20e02084dd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 44 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.ecommerce.qa.tests.ContactPageTests#shouldSuccessfullySubmitContactUsForm</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Webmaster</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:java automationseleniumprojectsecommercesrcmainjavacomecommerceqailescontactFormSendFile.txt
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;DESKTOP-TQTAUTU&apos;, ip: &apos;192.168.8.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4acd7559f48355ad3e24cb1e43f65ddf, sendKeysToElement {id=f6ff55be-e3e6-498c-b057-df82b5159bb0, value=[Ljava.lang.CharSequence;@624268ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\maxim\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://192.168.8.104:4444/ses..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on WINDOWS (4acd7559f48355ad3e24cb1e43f65ddf)] -&gt; id: fileUpload]
+Session ID: 4acd7559f48355ad3e24cb1e43f65ddf
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.ecommerce.qa.pageobjects.ContactPage.sendMessage(ContactPage.java:65)
+	at com.ecommerce.qa.tests.ContactPageTests.shouldSuccessfullySubmitContactUsForm(ContactPageTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 44 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.ecommerce.qa.tests.ContactPageTests#shouldChangeSubjectDescription</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Customer service</td><td>For any question about a product, an order</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.ecommerce.qa.tests.ContactPageTests#shouldChangeSubjectDescription</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Webmaster</td><td>If a technical problem occurs on this website</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ForgetPasswordPageTests</h2><h3 id="m18">com.ecommerce.qa.tests.ForgetPasswordPageTests#goBackToLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.ecommerce.qa.tests.ForgetPasswordPageTests#goBackToLoginPageByBreadCrumbButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.ecommerce.qa.tests.ForgetPasswordPageTests#submitForgotPasswordForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>irvin.stamm@gmail.com</td><td>There is no account registered for this email address.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.ecommerce.qa.tests.ForgetPasswordPageTests#submitForgotPasswordForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>com.github.javafaker.Name@38e100ab</td><td>Invalid email address.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.ecommerce.qa.tests.ForgetPasswordPageTests#submitForgotPasswordForm</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>maxim3093@gmail.com</td><td>A confirmation email has been sent to your address: maxim3093@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePageTests</h2><h3 id="m23">com.ecommerce.qa.tests.HomePageTests#shouldAddProductToCartFromHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.ecommerce.qa.tests.HomePageTests#shouldDisplayAllTheContentInsideCategoryDropdownMenu</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Dresses</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.ecommerce.qa.tests.HomePageTests#shouldDisplayAllTheContentInsideCategoryDropdownMenu</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Women</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.ecommerce.qa.tests.HomePageTests#shouldDisplayHomeContentImages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.ecommerce.qa.tests.HomePageTests#shouldDisplayHomePageLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.ecommerce.qa.tests.HomePageTests#shouldDisplayProductReviewPopUpWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.ecommerce.qa.tests.HomePageTests#shouldRedirectToContactUsPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.ecommerce.qa.tests.HomePageTests#shouldRedirectToProductPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>com.github.javafaker.Name@38e100ab</td><td>Newsletter : Invalid email address.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>page.carroll@hotmail.com</td><td>Newsletter : You have successfully subscribed to this newsletter.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.ecommerce.qa.tests.HomePageTests#shouldReturnCorrectNewsletterAlertMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>maxim3093@gmail.com</td><td>Newsletter : This email address is already registered.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
