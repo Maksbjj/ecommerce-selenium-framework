@@ -5,8 +5,6 @@ y
 Isrc/main/java/com/ecommerce/qa/pageobjects/cartpages/CartPaymentPage.java,7\1\7109e57dab5c238a46e2dc14e1d88384424029ad
 z
 Jsrc/main/java/com/ecommerce/qa/pageobjects/cartpages/CartShippingPage.java,b\3\b3325be39c8f9367205513591fa16f0a97a5d84d
-h
-8src/test/java/com/ecommerce/qa/tests/LoginPageTests.java,a\9\a9716ca9879262394a770e5b71d4a1cc4cdae564
 y
 Isrc/main/java/com/ecommerce/qa/pageobjects/cartpages/CartSummaryPage.java,6\f\6fcbc00fada590984bf961fcc320fb11672751e7
 i
@@ -35,10 +33,6 @@ w
 Gsrc/main/java/com/ecommerce/qa/utils/pojo/homepagecategories/Women.java,1\0\104697c4415ff6e075cb4b67a9f8df3b3512a691
 k
 ;src/main/java/com/ecommerce/qa/utils/FakeDataGenerator.java,6\2\62bd14772b44137a5a3e8f768d673af16d5f6db8
-q
-Asrc/test/java/com/ecommerce/qa/tests/ForgetPasswordPageTests.java,c\d\cd80a3549c47f1ea1cc15408a804b5bb382a5a2c
-g
-7src/test/java/com/ecommerce/qa/tests/HomePageTests.java,0\c\0c52e31ad7b08ac26fab34c49a30b124abcf3e61
 h
 8src/main/java/com/ecommerce/qa/pageobjects/HomePage.java,6\2\6261cd184388e583fa1325174a0754f2f930df64
 i
@@ -47,10 +41,6 @@ k
 ;src/main/java/com/ecommerce/qa/pageobjects/ProductPage.java,e\0\e035dad8fbed918d39bf39f2f7ef57fbbd19f06e
 l
 <src/main/java/com/ecommerce/qa/pageobjects/CategoryPage.java,8\9\89a5448e312988192ec832871a1a9dae91fe8a45
-g
-7src/test/java/com/ecommerce/qa/tests/CartPageTests.java,8\8\880590513a3e88eee5312f90c45cece1a82b4de5
-h
-8src/main/java/com/ecommerce/qa/utils/AllureListener.java,8\e\8e65744bd2049958822a3187acde337b2e5e58fa
 t
 Dsrc/main/java/com/ecommerce/qa/pageobjects/popup/AddToCartPopup.java,9\b\9b5d186021d1982969d0378e0cc8acaef30d756b
 f
