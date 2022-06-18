@@ -7,12 +7,12 @@
             <class name="com.ecommerce.qa.tests.CartPageTests"/>
         </classes>
     </test>
-<!--    <test name="LoginPageTests">-->
-<!--        <parameter name="Browser" value="firefox"/>-->
-<!--        <classes>-->
-<!--            <class name="com.ecommerce.qa.tests.LoginPageTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="LoginPageTests">
+        <parameter name="Browser" value="firefox"/>
+        <classes>
+            <class name="com.ecommerce.qa.tests.LoginPageTests"/>
+        </classes>
+    </test>
 <!--    <test name="ContactPageTests">-->
 <!--        <parameter name="Browser" value="chrome"/>-->
 <!--        <classes>-->
