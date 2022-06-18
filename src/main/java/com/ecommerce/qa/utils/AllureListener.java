@@ -28,6 +28,8 @@ public class AllureListener implements ITestListener, ISuiteListener {
         }
     }
 
+
+
     @Override
     public void onFinish(ISuite suite) {
 
