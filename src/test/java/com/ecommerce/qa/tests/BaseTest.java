@@ -17,7 +17,7 @@ public abstract class BaseTest extends BasePage {
     @Parameters({"Browser"})
     @BeforeMethod
     public void setUp(@Optional String browser) {
-        initializeBrowser("MicrosoftEdge");
+        initializeBrowser(browser);
         deleteCookies();
         maximizeWindow();
         setImplicitTimeout();
