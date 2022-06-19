@@ -1,6 +1,4 @@
 package com.ecommerce.qa.tests;
-
-import com.ecommerce.qa.base.BrowserType;
 import com.ecommerce.qa.base.BasePage;
 import org.testng.annotations.*;
 
@@ -16,7 +14,7 @@ public abstract class BaseTest extends BasePage {
 
     @Parameters({"Browser"})
     @BeforeMethod
-    public void setUp(@Optional String browser) {
+    public void setUp(String browser) {
         initializeBrowser(browser);
         deleteCookies();
         maximizeWindow();
