@@ -53,8 +53,6 @@ d
 4src/main/java/com/ecommerce/qa/base/BrowserType.java,f\4\f4e95d6812e42dcf7eb981a8fef92559ae27a367
 l
 <src/main/java/com/ecommerce/qa/files/contactFormSendFile.txt,4\a\4aa3933d80a171d5a39295b0467aff9bc8201056
-a
-1src/main/java/com/ecommerce/qa/base/BasePage.java,a\9\a9692fad5a306466279f9edbbe47df009a02b7e7
 `
 0src/main/java/com/ecommerce/qa/files/alerts.json,2\0\203c8252715848059adf8c1611f20baac4856172
 e
