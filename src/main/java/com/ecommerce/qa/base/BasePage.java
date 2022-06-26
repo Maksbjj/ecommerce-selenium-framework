@@ -2,21 +2,21 @@ package com.ecommerce.qa.base;
 
 import com.ecommerce.qa.config.EnvironmentConfig;
 import com.ecommerce.qa.utils.pojo.Alerts;
-import com.ecommerce.qa.utils.pojo.contactpage.ContactSubject;
 import com.ecommerce.qa.utils.pojo.PageTitle;
+import com.ecommerce.qa.utils.pojo.addressform.AddressFormData;
+import com.ecommerce.qa.utils.pojo.contactpage.ContactSubject;
 import com.ecommerce.qa.utils.pojo.homepagecategories.Root;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumOptions;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.ProtocolHandshake;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -43,31 +43,29 @@ public class BasePage {
 
     public static void initializeBrowser(String browserName) {
         DesiredCapabilities cap = new DesiredCapabilities();
-        try{
-        switch (browserName) {
-            case "chrome" -> {
-                cap.setPlatform(Platform.ANY);
-                cap.setBrowserName(browserName);
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.merge(cap);
-                driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), chromeOptions);
-            }
-                case "firefox" -> {
-                    cap.setPlatform(Platform.ANY);
+        cap.setPlatform(Platform.ANY);
+        try {
+            switch (browserName) {
+                case "chrome" -> {
                     cap.setBrowserName(browserName);
-                    ChromeOptions chromeOptions = new ChromeOptions()
-                            .setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+                    ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.merge(cap);
                     driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), chromeOptions);
+                }
+//                case "firefox" -> {
+//                    cap.setBrowserName(browserName);
+//                    ChromeOptions chromeOptions = new ChromeOptions();
+//                    chromeOptions.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+//                    chromeOptions.merge(cap);
+//                    driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), chromeOptions);
+//                }
+                case "MicrosoftEdge" -> {
+                    cap.setBrowserName(browserName);
+                    EdgeOptions edgeOptions = new EdgeOptions();
+                    edgeOptions.merge(cap);
+                    driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL), edgeOptions);
+                }
             }
-            case "MicrosoftEdge" -> {
-                cap.setPlatform(Platform.ANY);
-                cap.setBrowserName(browserName);
-                EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.merge(cap);
-                driver = new RemoteWebDriver(new URL(GRID_LOCAL_URL),edgeOptions);
-            }
-        }
         } catch (MalformedURLException e) {
             e.getStackTrace();
         }
@@ -103,7 +101,8 @@ public class BasePage {
         alerts = readJsonToPojo(Alerts.class, envConfig.getAlertsPath());
         pageTitles = readJsonToPojo(PageTitle.class, envConfig.getPageTitlesPath());
         subjects = readJsonToPojo(ContactSubject.class, envConfig.getContactSubjectsPath());
-        root = readJsonToPojo(Root.class,envConfig.getHomePageCategoriesPath());
+        root = readJsonToPojo(Root.class, envConfig.getHomePageCategoriesPath());
+        addressFormData = readJsonToPojo(AddressFormData.class, envConfig.getAddressFormDataPath());
     }
 
     public void clickElement(WebElement element) {
@@ -118,7 +117,6 @@ public class BasePage {
     public boolean isElementPresented(WebElement element) {
         return element.isDisplayed();
     }
-
 
 
     public String getElementsText(WebElement element) {

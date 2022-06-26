@@ -7,28 +7,28 @@
             <class name="com.ecommerce.qa.tests.CartPageTests"/>
         </classes>
     </test>
-    <test name="LoginPageTests">
-        <parameter name="Browser" value="firefox"/>
-        <classes>
-            <class name="com.ecommerce.qa.tests.LoginPageTests"/>
-        </classes>
-    </test>
-<!--    <test name="ContactPageTests">-->
+<!--    <test name="LoginPageTests">-->
 <!--        <parameter name="Browser" value="chrome"/>-->
 <!--        <classes>-->
-<!--            <class name="com.ecommerce.qa.tests.ContactPageTests"/>-->
+<!--            <class name="com.ecommerce.qa.tests.LoginPageTests"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="ForgetPasswordPageTests">-->
-<!--        <parameter name="Browser" value="firefox"/>-->
-<!--        <classes>-->
-<!--            <class name="com.ecommerce.qa.tests.ForgetPasswordPageTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="HomePageTests">-->
-<!--        <parameter name="Browser" value="MicrosoftEdge"/>-->
-<!--        <classes>-->
-<!--            <class name="com.ecommerce.qa.tests.HomePageTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    <test name="ContactPageTests">-->
+    <!--        <parameter name="Browser" value="chrome"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ecommerce.qa.tests.ContactPageTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="ForgetPasswordPageTests">-->
+    <!--        <parameter name="Browser" value="firefox"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ecommerce.qa.tests.ForgetPasswordPageTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="HomePageTests">-->
+    <!--        <parameter name="Browser" value="MicrosoftEdge"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.ecommerce.qa.tests.HomePageTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>

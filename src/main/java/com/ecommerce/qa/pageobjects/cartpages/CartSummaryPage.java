@@ -21,7 +21,7 @@ public class CartSummaryPage extends HomePage {
     @FindBy(css = "[id*='cart_quantity_up']")
     private List<WebElement> cartQuantityUpButtons;
 
-    @FindBy(css ="[class='cart_quantity text-center'] input[type='hidden']")
+    @FindBy(css = "[class='cart_quantity text-center'] input[type='hidden']")
     public List<WebElement> quantityInputs;
 
     @FindBy(css = "a[title='Delete']")
@@ -30,14 +30,14 @@ public class CartSummaryPage extends HomePage {
     @FindBy(css = "td[class*='cart_product'] img")
     private List<WebElement> productImages;
 
-    @FindBy(css ="span[class*='label label-success']")
+    @FindBy(css = "span[class*='label label-success']")
     private List<WebElement> availabilityLabels;
 
-    @FindBy(css ="a[title*='Continue shopping']")
+    @FindBy(css = "a[title*='Continue shopping']")
     private WebElement continueShoppingButton;
 
     @FindBy(css = "a[class*='standard-checkout button'] span")
-    private WebElement proceedToCheckoutButton;
+    public WebElement proceedToCheckoutButton;
 
     @FindBy(css = "[class*='address first_item']")
     private WebElement deliveryAddress;
@@ -46,49 +46,55 @@ public class CartSummaryPage extends HomePage {
     private WebElement invoiceAddress;
 
 
-    public boolean areAddressesDisplayed(){
+    public boolean areAddressesDisplayed() {
         return deliveryAddress.isDisplayed() || invoiceAddress.isDisplayed();
     }
 
 
-    public CartSummaryPage deleteProductFromCart(){
+    public CartSummaryPage deleteProductFromCart() {
         for (WebElement deleteFromCartButton : deleteFromCartButtons) {
             clickElement(deleteFromCartButton);
         }
         return new CartSummaryPage();
     }
 
-    public LoginPage proceedToLoginPage(){
+    public LoginPage proceedToLoginPage() {
+        waitForElementToBeClickable(proceedToCheckoutButton);
         clickElement(proceedToCheckoutButton);
         return new LoginPage();
     }
 
-    public CartAddressPage proceedToAddressPage(){
+    public CartAddressPage proceedToAddressPage() {
+        waitForElementToBeClickable(proceedToCheckoutButton);
         clickElement(proceedToCheckoutButton);
         return new CartAddressPage();
     }
 
+    public CartShippingPage proceedToShippingPage() {
+        waitForElementToBeClickable(proceedToCheckoutButton);
+        clickElement(proceedToCheckoutButton);
+        return new CartShippingPage();
+    }
 
-
-    public String getProductQuantity(){
+    public String getProductQuantity() {
 
         return quantityInputs.get(0).getAttribute("value");
     }
 
-    public void increaseProductQuantity(){
+    public void increaseProductQuantity() {
         clickElement(cartQuantityUpButtons.get(0));
     }
 
-    public void decreaseProductQuantity(){
+    public void decreaseProductQuantity() {
         clickElement(cartQuantityDownButtons.get(0));
     }
 
-    public ExpectedCondition<Boolean> isQuantityIncreasedByOne(int beforeValue){
+    public ExpectedCondition<Boolean> isQuantityIncreasedByOne(int beforeValue) {
         return ExpectedConditions.domAttributeToBe(quantityInputs.get(0),
                 "value", String.valueOf(beforeValue + 1));
     }
 
-    public ExpectedCondition<Boolean> isQuantityDecreasedByOne(int beforeValue){
+    public ExpectedCondition<Boolean> isQuantityDecreasedByOne(int beforeValue) {
         return ExpectedConditions.domAttributeToBe(quantityInputs.get(0),
                 "value", String.valueOf(beforeValue - 1));
     }

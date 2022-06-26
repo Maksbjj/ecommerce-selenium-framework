@@ -3,10 +3,17 @@ package com.ecommerce.qa.utils;
 import com.ecommerce.qa.config.EnvironmentConfig;
 import com.ecommerce.qa.pageobjects.HomePage;
 import com.ecommerce.qa.utils.pojo.Alerts;
-import com.ecommerce.qa.utils.pojo.contactpage.ContactSubject;
 import com.ecommerce.qa.utils.pojo.PageTitle;
+import com.ecommerce.qa.utils.pojo.addressform.AddressFormData;
+import com.ecommerce.qa.utils.pojo.addressform.CorrectAddress;
+import com.ecommerce.qa.utils.pojo.addressform.IncorrectAddress;
+import com.ecommerce.qa.utils.pojo.contactpage.ContactSubject;
 import com.ecommerce.qa.utils.pojo.homepagecategories.Root;
 import org.testng.annotations.DataProvider;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import static com.ecommerce.qa.utils.FakeDataGenerator.*;
 
@@ -17,6 +24,7 @@ public class TestDataProvider {
     public static Root root;
     public static ContactSubject subjects;
     public static Alerts alerts;
+    public static AddressFormData addressFormData;
 
 
     @DataProvider(name = "newsletter_data")
@@ -61,11 +69,30 @@ public class TestDataProvider {
                 {subjects.getSubjects()[1].getName(),
                         randomNumber(), randomMessage(), alerts.getInvalidEmail()},
                 {subjects.getSubjects()[0].getName(),
-                        validEmail(),"",alerts.getBlankMessageError()}};
+                        validEmail(), "", alerts.getBlankMessageError()}};
     }
 
     @DataProvider(name = "homepage_product_categories")
-    public Object[][] getHomePageProductCategories(){
-        return new Object[][] {{HomePage.WOMEN_CATEGORY_NAME},{HomePage.DRESSES_CATEGORY_NAME}};
+    public Object[][] getHomePageProductCategories() {
+        return new Object[][]{{HomePage.WOMEN_CATEGORY_NAME}, {HomePage.DRESSES_CATEGORY_NAME}};
     }
+
+    @DataProvider(name = "address_form_data_correct")
+    public Iterator<Object[]> getCorrectAddressFormData() {
+        List<Object[]> args = new ArrayList<>();
+        for (CorrectAddress address : addressFormData.getCorrect()) {
+            args.add(new Object[]{address});
+        }
+        return args.iterator();
+    }
+
+    @DataProvider(name = "address_form_data_incorrect")
+    public Iterator<Object[]> getIncorrectAddressFormData(){
+        List<Object[]> args = new ArrayList<>();
+        for (IncorrectAddress address : addressFormData.getIncorrect()) {
+            args.add(new Object[]{address});
+        }
+        return args.iterator();
+    }
+
 }

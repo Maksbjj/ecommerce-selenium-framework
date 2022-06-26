@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.ecommerce.qa.base.DriverContext.driver;
-import static com.ecommerce.qa.utils.TestDataProvider.*;
+import static com.ecommerce.qa.utils.TestDataProvider.envConfig;
+import static com.ecommerce.qa.utils.TestDataProvider.root;
 
 
 public class HomePage extends BasePage {
@@ -33,7 +33,7 @@ public class HomePage extends BasePage {
     @FindBy(name = "submit_search")
     private WebElement submitSearch;
 
-    @FindBy(css = "div[class='shopping_cart'] a")
+    @FindBy(css = "a[title*='shopping cart']")
     private WebElement openCartButton;
 
     @FindBy(css = "ul[id='blockbestsellers'] li")
@@ -69,7 +69,7 @@ public class HomePage extends BasePage {
     @FindBy(css = "span[class='shop-phone']")
     private WebElement callUsNowElement;
 
-    @FindBy(css = "a[class='login']")
+    @FindBy(css = "div[class*='header_user_info']")
     private WebElement loginPageButton;
 
     @FindBy(css = "a[title='View']")
@@ -105,10 +105,10 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "(//div[@class='product-container'])[1]")
     private WebElement productContainer;
 
-    @FindBy (css = "li a[title='Women']")
+    @FindBy(css = "li a[title='Women']")
     private WebElement womenCategory;
 
-    @FindBy (css = "li a[title='Dresses']")
+    @FindBy(css = "li a[title='Dresses']")
     private List<WebElement> dressesCategory;
 
     @FindBy(css = "li[class='sfHover'] li a[class='sf-with-ul']")
@@ -116,7 +116,7 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "li[class='sfHover']  li ul a")
     private List<WebElement> womenSubCategories;
-    
+
     @FindBy(css = "li[class='sfHover'] li")
     private List<WebElement> dressCategories;
 
@@ -143,7 +143,7 @@ public class HomePage extends BasePage {
         return new ContactPage();
     }
 
-    public CartSummaryPage openCartPage(){
+    public CartSummaryPage openCartPage() {
         clickElement(openCartButton);
         return new CartSummaryPage();
     }
@@ -175,7 +175,8 @@ public class HomePage extends BasePage {
         return isElementPresented(productReviewPopUp);
     }
 
-    public WebElement getAlertMessage(){
+    public WebElement getAlertMessage() {
+        waitForElementToBeDisplayed(alertMessage);
         return alertMessage;
     }
 
@@ -199,20 +200,20 @@ public class HomePage extends BasePage {
                 }
             }
             for (WebElement womenSubCategory : womenSubCategories) {
-                if(!listOfAllCategories.contains(womenSubCategory.getText())) {
+                if (!listOfAllCategories.contains(womenSubCategory.getText())) {
                     return false;
                 }
             }
-        } else if(categoryName.equalsIgnoreCase(DRESSES_CATEGORY_NAME)) {
+        } else if (categoryName.equalsIgnoreCase(DRESSES_CATEGORY_NAME)) {
             waitForElementsToBeDisplayed(dressCategories);
             for (int i = 0; i < dressCategories.size(); i++) {
-               if(!dressCategories.get(i).getText().equalsIgnoreCase(root.getWomen().getDresses().get(i).getName())) {
-                   return false;
+                if (!dressCategories.get(i).getText().equalsIgnoreCase(root.getWomen().getDresses().get(i).getName())) {
+                    return false;
                 }
             }
         }
         return true;
-        }
+    }
 
     public void chooseCategory(String categoryName) {
         Actions actions = new Actions(driver);
@@ -229,7 +230,7 @@ public class HomePage extends BasePage {
         root.getWomen().getTops().forEach(x -> list.add(x.getName()));
         return list;
     }
-    }
+}
 
 
 
